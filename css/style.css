@@ -359,6 +359,15 @@ img {
   max-width: 100%;
 }
 
+button {
+  cursor: pointer;
+  outline: none;
+}
+
+input {
+  outline: none;
+}
+
 .navbar {
   background-color: #fff;
 }
