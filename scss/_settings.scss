@@ -9,6 +9,10 @@ body {
   margin: auto;
 }
 
+img {
+  max-width: 100%;
+}
+
 button {
   cursor: pointer;
   outline: none;
@@ -16,4 +20,5 @@ button {
 
 input {
   outline: none;
+
 }
