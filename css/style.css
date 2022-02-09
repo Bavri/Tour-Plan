@@ -355,6 +355,15 @@ body {
   margin: auto;
 }
 
+button {
+  cursor: pointer;
+  outline: none;
+}
+
+input {
+  outline: none;
+}
+
 .header {
   background-color: #fff;
 }
