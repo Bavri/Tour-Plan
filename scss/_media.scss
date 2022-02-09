@@ -4,13 +4,16 @@
   }
 }
 
-@media (max-width: 922px) {
+@media (max-width: 992px) {
   .container {
     max-width: 700px;
   }
+  .logo {
+    width: 132.75px;
+  }
   .navbar {
     &-top {
-      padding-left: 30px;
+      padding-top: 30px;
       padding-bottom: 30px;
     }
 
@@ -23,8 +26,10 @@
     }
   }
   .search {
+    width: 340px;
+    margin-left: 47px;
     &__input {
-      width: 340px;
+      max-width: 275px;
     }
   }
 }
