@@ -355,11 +355,15 @@ body {
   margin: auto;
 }
 
-.header {
+img {
+  max-width: 100%;
+}
+
+.navbar {
   background-color: #fff;
 }
 
-.header__top {
+.navbar-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -373,9 +377,48 @@ body {
   padding-bottom: 40px;
 }
 
-.header__search {
+.navbar-top__menu-button {
+  display: none;
+}
+
+.navbar__search {
   margin-left: 108px;
   margin-right: 368px;
+}
+
+.navbar-bottom {
+  background-color: #0a223d;
+}
+
+.navbar-menu {
+  list-style: none;
+  margin: 0;
+  padding: 31px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #0a223d;
+  color: #ffffff;
+}
+
+.navbar-menu__link {
+  color: inherit;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.logo {
+  width: 177px;
 }
 
 .search {
@@ -409,7 +452,7 @@ body {
   right: 0;
   padding: 0;
   border: none;
-  background-color: #EC1F46;
+  background-color: #ec1f46;
 }
 
 .search__icon {
@@ -440,5 +483,73 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: #333333;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 922px) {
+  .container {
+    max-width: 700px;
+  }
+  .navbar-top {
+    padding-left: 30px;
+    padding-bottom: 30px;
+  }
+  .navbar-menu {
+    padding: 22px 0;
+  }
+  .navbar-menu__link {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .search__input {
+    width: 340px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 576px;
+    width: 92%;
+  }
+  .navbar__search, .navbar-menu, .navbar__user {
+    display: none;
+  }
+  .menu-button {
+    width: 16px;
+    height: 11px;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+  .menu-button__line {
+    width: 16px;
+    margin: 0;
+    border: 0.5px solid black;
+  }
+}
+
+@media (max-width: 568px) {
+  .logo {
+    width: 99px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
