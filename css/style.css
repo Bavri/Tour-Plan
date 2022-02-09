@@ -542,8 +542,8 @@ img {
   }
   .menu-button__line {
     width: 16px;
-    margin: 0;
-    border: 0.5px solid black;
+    height: 1px;
+    background-color: black;
   }
 }
 
