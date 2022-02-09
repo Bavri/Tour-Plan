@@ -442,7 +442,6 @@ input {
 }
 
 .search__input {
-  max-width: 285px;
   width: 100%;
   height: 100%;
   padding-left: 23px;
@@ -522,9 +521,6 @@ input {
   .search {
     width: 340px;
     margin-left: 47px;
-  }
-  .search__input {
-    max-width: 275px;
   }
 }
 
