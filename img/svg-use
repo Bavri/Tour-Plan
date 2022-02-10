@@ -28,3 +28,7 @@
 <svg class="icon">
   <use xlink:href="#logo-horizontal"></use>
 </svg>
+
+<svg class="icon">
+  <use xlink:href="#star"></use>
+</svg>
