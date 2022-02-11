@@ -62,6 +62,29 @@
       }
     }
   }
+  .stars {
+    flex-basis: content;
+  }
+  .hotel {
+    &-wrapper {
+      justify-content: space-between;
+    }
+    &-name {
+      flex-basis: 100%;
+    }
+    &-info {
+      &__rating {
+        display: none;
+      }
+      &__text {
+        width: 100%;
+      }
+      &__offer {
+        order: -1;
+        margin-left: 0;
+      }
+    }
+  }
 }
 
 @media (max-width: 568px) {

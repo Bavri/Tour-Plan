@@ -3,6 +3,11 @@
 }
 body {
   font-family: "Mulish", sans-serif;
+  background-color: $secondary;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
 .container {
   max-width: 1110px;
@@ -20,5 +25,4 @@ button {
 
 input {
   outline: none;
-
 }
