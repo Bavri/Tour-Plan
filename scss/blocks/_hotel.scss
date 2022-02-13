@@ -15,6 +15,7 @@
     }
   }
   &-name {
+    text-transform: uppercase;
     font-size: 24px;
     line-height: 30px;
   }
@@ -29,12 +30,12 @@
   }
 }
 .offer {
-  font-size: 10px;
-  line-height: 13px;
   padding: 4px 9px;
+  border-radius: 3px;
   background-color: $primary;
   color: $light;
-  border-radius: 3px;
+  font-size: 10px;
+  line-height: 13px;
 }
 .stars {
   flex-basis: 100%;
@@ -48,17 +49,21 @@
   max-width: 65px;
   padding-top: 8px;
   padding-bottom: 7px;
-  text-align: center;
   background-color: $primary;
   color: $light;
   border-radius: 4px;
+  text-align: center;
   &__text {
     font-size: 8px;
     line-height: 10px;
   }
-  &_counter {
+  &__counter {
     font-size: 14px;
     line-height: 18px;
+  }
+  &__total {
+    font-size: 8px;
+    line-height: 10px;
   }
 }
 
