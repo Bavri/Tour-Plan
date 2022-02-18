@@ -13,7 +13,7 @@
 }
 
 @media (max-width: 992px) {
-  .container {
+  .container .newsletter-wrapper {
     max-width: 700px;
   }
   .logo {
@@ -131,6 +131,14 @@
       width: 100%;
     }
   }
+  .newsletter {
+    &-wrapper {
+      max-width: 576px;
+      width: 92%;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
 }
 
 @media (max-width: 568px) {
@@ -143,5 +151,15 @@
   }
   .hotel &__slider {
     margin-bottom: 20px;
+  }
+  .newsletter {
+    padding: 76px 0 83px 0;
+    &-title {
+      margin-bottom: 37px;
+    }
+  }
+  .subscribe {
+    max-width: 280px;
+    width: 100%;
   }
 }

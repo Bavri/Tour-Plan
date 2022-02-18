@@ -1,0 +1,21 @@
+.reviews {
+  padding: 40px 0 70px 0;
+  &__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &-slider {
+    &__item {
+      background-color: #fff;
+    }
+  }
+}
+
+&__star {
+  width: 6px;
+  height: 6px;
+}
