@@ -80,12 +80,12 @@
       background-position: center;
       background-size: 10px;
       cursor: pointer;
-      &--prev {
+      &-prev {
         left: 18px;
 
         background-image: url(../img/arrow-prev.svg);
       }
-      &--next {
+      &-next {
         right: 18px;
         background-image: url(../img/arrow-next.svg);
       }

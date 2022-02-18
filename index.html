@@ -128,7 +128,7 @@
         </div>
       <div class="hotel-grid">
        
-          <div class="swiper-container hotel-slider hotel__slider" >
+          <div class="swiper hotel-slider hotel__slider" >
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper" >
               <!-- Slides -->
@@ -144,8 +144,8 @@
             </div>
             <!-- If we need navigation buttons -->
            
-            <button class="hotel-slider__button hotel-slider__button--next"></button>
-            <button class="hotel-slider__button hotel-slider__button--prev"></button>
+            <button class="hotel-slider__button hotel-slider__button-next"></button>
+            <button class="hotel-slider__button hotel-slider__button-prev"></button>
           </div>
         
        
@@ -214,11 +214,11 @@
    <div class="container">
      <h2 class="reviews__title">What people think about us</h2>
     <!-- Slider main container -->
-    <div class="swiper-container reviews-slider">
+    <div class="swiper reviews-slider">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
-        <div class="reviews-slide__item">
+        <div class="swiper-slide reviews-slider__item">
           <div class="reviews-slider__profile">
             <img src="../img/slider-avatar1.jpg" alt="" class="reviews-slider__avatar"/>
             <h3 class="reviews-slider__username">
@@ -228,7 +228,7 @@
               Stayed 18 Nov, 2019
             </span>
 
-            <div class="rating">
+            <div class="reviews-slider__rating">
               <svg class="icon reviews-slider__star">
                 <use xlink:href="./img/sprite.svg#star"></use>
               </svg>
@@ -260,17 +260,18 @@
         </div>
         
         
+        
       </div>
       
     
-      <div class="swiper-button--prev"></div>
-      <div class="swiper-button--next"></div>
+      <button class="reviews-slider__button reviews-slider__button-prev"></button>
+      <button class="reviews-slider__button reviews-slider__button-next"></button>
     
      
     </div>
    </div>
  </section>
-
+  
   <script src="./js/swiper-bundle.min.js"></script>
   <script src="./js/main.js"></script>
 </body>

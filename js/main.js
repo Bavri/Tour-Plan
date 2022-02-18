@@ -4,12 +4,13 @@ const hotelSlider = new Swiper('.hotel-slider ', {
   loop: true,
 
   // If we need pagination
-  
+  speed: 600,
+  parallax: true,
 
   // Navigation arrows
   navigation: {
-    nextEl: '.hotel-slider__button--next',
-    prevEl: '.hotel-slider__button--prev',
+    nextEl: '.hotel-slider__button-next',
+    prevEl: '.hotel-slider__button-prev',
   },
 
   // And if we need scrollbar
@@ -18,18 +19,19 @@ const hotelSlider = new Swiper('.hotel-slider ', {
   },
 });
 
-const reviewsSlider = new Swiper('.hotel-slider ', {
+const reviewsSlider = new Swiper('.reviews-slider ', {
   // Optional parameters
 
   loop: true,
 
   // If we need pagination
-  
-
+  slidesPerView: 1,
+  speed: 300,
+  parallax: true,
   // Navigation arrows
   navigation: {
-    nextEl: '.hotel-slider__button--next',
-    prevEl: '.hotel-slider__button--prev',
+    nextEl: '.reviews-slider__button-next',
+    prevEl: '.reviews-slider__button-prev',
   },
 
   // And if we need scrollbar
@@ -37,3 +39,4 @@ const reviewsSlider = new Swiper('.hotel-slider ', {
     enabled:true,
   },
 });
+
