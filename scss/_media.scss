@@ -162,14 +162,12 @@
       &__button {
         top: 45px;
         &-prev {
-          left: 50%;
-          margin-left: -65px;
-          transform: translate(-50%, 0);
+          left: 25%;
+          margin-left: -40px;
         }
         &-next {
-          right: 50%;
-          margin-right: -65px;
-          transform: translate(50%, 0);
+          right: 25%;
+          margin-right: -40px;
         }
       }
     }
