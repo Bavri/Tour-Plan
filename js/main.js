@@ -3,8 +3,7 @@ const hotelSlider = new Swiper('.hotel-slider ', {
 
  
   // If we need pagination
-  speed: 600,
-  parallax: true,
+
 
   // Navigation arrows
   navigation: {
@@ -20,7 +19,8 @@ const hotelSlider = new Swiper('.hotel-slider ', {
 
 const reviewsSlider = new Swiper('.reviews-slider ', {
   // Optional parameters
-
+  speed: 600,
+  parallax: true,
   loop: true,
   // Navigation arrows
   navigation: {

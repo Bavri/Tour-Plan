@@ -931,6 +931,15 @@ input {
   position: relative;
 }
 
+.reviews-slider-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .reviews-slider__item {
   max-width: 731px;
   position: relative;
@@ -1058,6 +1067,17 @@ input {
   font-size: 12px;
   line-height: 160%;
   text-align: justify;
+}
+
+.parallax-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 130%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../img/parallax.jpg);
 }
 
 @media (max-width: 1200px) {

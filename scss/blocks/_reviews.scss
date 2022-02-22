@@ -11,6 +11,10 @@
   }
   &-slider {
     position: relative;
+    &-wrapper {
+      display: flex;
+      align-items: center;
+    }
     &__item {
       max-width: 731px;
       position: relative;
@@ -108,4 +112,16 @@
       text-align: justify;
     }
   }
+}
+
+.parallax-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 130%;
+  height: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../img/parallax.jpg);
 }
