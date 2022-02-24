@@ -1229,6 +1229,9 @@ input {
   .map {
     width: 340px;
   }
+  .reviews {
+    padding-bottom: 60px;
+  }
   .reviews-slider__item {
     max-width: 580px;
   }
@@ -1331,6 +1334,9 @@ input {
         -ms-flex-align: start;
             align-items: flex-start;
   }
+  .reviews {
+    padding-bottom: 50px;
+  }
   .reviews-slider__item {
     padding: 0 30px 30px;
   }
@@ -1347,6 +1353,9 @@ input {
   .reviews-slider__button-next {
     right: 25%;
     margin-right: -40px;
+  }
+  .activities {
+    padding-top: 40px;
   }
   .activities__wrapper {
     gap: 28px;
