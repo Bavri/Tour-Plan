@@ -11,6 +11,10 @@
   }
   &-slider {
     position: relative;
+    &-wrapper {
+      display: flex;
+      align-items: center;
+    }
     &__item {
       max-width: 731px;
       position: relative;
@@ -109,3 +113,4 @@
     }
   }
 }
+

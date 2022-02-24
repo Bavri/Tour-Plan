@@ -834,10 +834,6 @@ input {
   padding-left: 0;
   padding-right: 0;
   padding-bottom: 87px;
-  background-image: url(../img/bg-newsletter.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .newsletter::before {
@@ -929,6 +925,15 @@ input {
 
 .reviews-slider {
   position: relative;
+}
+
+.reviews-slider-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .reviews-slider__item {
