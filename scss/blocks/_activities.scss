@@ -1,0 +1,86 @@
+.activities {
+  padding-top: 60px;
+  padding-bottom: 98px;
+  &__title {
+    margin-bottom: 47px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-start;
+    position: relative;
+    width: 255px;
+    height: 255px;
+
+    padding-left: 24px;
+    padding-bottom: 26px;
+    overflow: hidden;
+    border-radius: 6px;
+    &--1 {
+      background-image: url(../img/activiti-bg-1.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+    &--2 {
+      background-image: url(../img/activiti-bg-2.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+    &--3 {
+      background-image: url(../img/activiti-bg-3.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+    &--4 {
+      background-image: url(../img/activiti-bg-4.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+      background: linear-gradient(
+        179.83deg,
+        rgba(196, 196, 196, 0) 35.34%,
+        #0a223d 99.85%
+      );
+    }
+    &__title {
+      margin-bottom: 18px;
+      z-index: 10;
+      color: $light;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 20px;
+    }
+    &__button {
+      padding: 7px 22px 7px 21px;
+      z-index: 10;
+      border: none;
+      border-radius: 4px;
+      color: $light;
+      background-color: $primary;
+
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+}
