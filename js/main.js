@@ -19,8 +19,7 @@ const hotelSlider = new Swiper('.hotel-slider ', {
 
 const reviewsSlider = new Swiper('.reviews-slider ', {
   // Optional parameters
-  speed: 600,
-  parallax: true,
+ 
   loop: true,
   // Navigation arrows
   navigation: {
@@ -34,3 +33,5 @@ const reviewsSlider = new Swiper('.reviews-slider ', {
   },
 });
 
+
+$('.newsletter').parallax({imageSrc: '../img/bg-newsletter.jpg'});

@@ -834,10 +834,6 @@ input {
   padding-left: 0;
   padding-right: 0;
   padding-bottom: 87px;
-  background-image: url(../img/bg-newsletter.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .newsletter::before {
@@ -1067,17 +1063,6 @@ input {
   font-size: 12px;
   line-height: 160%;
   text-align: justify;
-}
-
-.parallax-bg {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 130%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  background-image: url(../img/parallax.jpg);
 }
 
 @media (max-width: 1200px) {
