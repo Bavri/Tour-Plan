@@ -10,6 +10,10 @@
       object-fit: cover;
     }
   }
+  .activities-card {
+    height: 230px;
+    width: 230px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -64,6 +68,16 @@
       &__item {
         max-width: 580px;
       }
+    }
+  }
+
+  .activities {
+    &__wrapper {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    &-card {
+      width: 340px;
     }
   }
 }
@@ -170,6 +184,14 @@
           margin-right: -40px;
         }
       }
+    }
+  }
+  .activities {
+    &__wrapper {
+      gap: 28px;
+    }
+    &-card {
+      width: 100%;
     }
   }
 }

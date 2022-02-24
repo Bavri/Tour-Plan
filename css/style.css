@@ -1065,6 +1065,109 @@ input {
   text-align: justify;
 }
 
+.activities {
+  padding-top: 60px;
+  padding-bottom: 98px;
+}
+
+.activities__title {
+  margin-bottom: 47px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.activities__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.activities-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+  width: 255px;
+  height: 255px;
+  padding-left: 24px;
+  padding-bottom: 26px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.activities-card--1 {
+  background-image: url(../img/activiti-bg-1.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.activities-card--2 {
+  background-image: url(../img/activiti-bg-2.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.activities-card--3 {
+  background-image: url(../img/activiti-bg-3.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.activities-card--4 {
+  background-image: url(../img/activiti-bg-4.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.activities-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0a223d 99.85%);
+}
+
+.activities-card__title {
+  margin-bottom: 18px;
+  z-index: 10;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.activities-card__button {
+  padding: 7px 22px 7px 21px;
+  z-index: 10;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: #ec1f46;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1077,6 +1180,10 @@ input {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .activities-card {
+    height: 230px;
+    width: 230px;
   }
 }
 
@@ -1129,6 +1236,14 @@ input {
   }
   .reviews-slider__item {
     max-width: 580px;
+  }
+  .activities__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 20px;
+  }
+  .activities-card {
+    width: 340px;
   }
 }
 
@@ -1237,6 +1352,12 @@ input {
   .reviews-slider__button-next {
     right: 25%;
     margin-right: -40px;
+  }
+  .activities__wrapper {
+    gap: 28px;
+  }
+  .activities-card {
+    width: 100%;
   }
 }
 
