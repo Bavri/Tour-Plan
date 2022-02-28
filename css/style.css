@@ -1412,6 +1412,9 @@ input {
     width: 340px;
     margin-left: 47px;
   }
+  .hotel {
+    padding-bottom: 30px;
+  }
   .hotel-slider {
     width: 100%;
   }
@@ -1429,6 +1432,9 @@ input {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  .packages__title {
+    margin-top: 0;
   }
   .packages-wrapper {
     -ms-grid-columns: (48%)[auto-fit];
