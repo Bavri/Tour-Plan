@@ -14,6 +14,53 @@
     height: 230px;
     width: 230px;
   }
+  .footer {
+    &-wrapper {
+      grid-template-columns: repeat(6, 1fr);
+      gap: 40px;
+      &__politics {
+        justify-content: flex-start;
+      }
+    }
+    &-input {
+      flex-basis: 45%;
+      &--mr-30 {
+        margin-right: 0px;
+      }
+    }
+    &__logo-vertical {
+      grid-row: 1/2;
+      grid-column: span 2;
+    }
+    &__social-network {
+      grid-row: 1/2;
+      grid-column: span 4;
+      align-self: center;
+    }
+    &__categories {
+      grid-row: 2/3;
+      grid-column: span 2;
+    }
+    &__legal {
+      grid-column: span 2;
+    }
+    &__additional {
+      grid-column: span 2;
+    }
+    &__contact {
+      &-details {
+        grid-column: span 4;
+        grid-row: 3;
+      }
+      &-form {
+        grid-column: span 4;
+        grid-row: 4;
+      }
+    }
+    &__politics {
+      max-width: 100%;
+    }
+  }
 }
 
 @media (max-width: 992px) {
@@ -195,6 +242,56 @@
     }
     &-card {
       width: 100%;
+    }
+  }
+  .footer {
+    &__logo-vertical {
+      width: 104px;
+      height: 120px;
+    }
+
+    &-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    &__list {
+      flex-basis: 100%;
+    }
+    &__list {
+      &--pl {
+        padding-left: 0px;
+      }
+    }
+    &__social-network {
+      flex-wrap: wrap;
+    }
+    &__title-network {
+      flex-basis: 100%;
+    }
+    &__links {
+      margin-left: 0;
+    }
+    &__contact-form {
+      display: flex;
+      flex-direction: column;
+    }
+    &__politics {
+      flex-wrap: wrap;
+      gap: 10px;
+      &-ul {
+        flex-basis: 100%;
+      }
+    }
+    &-input {
+      flex-basis: 100%;
+    }
+    &__message {
+      flex-basis: 100%;
+    }
+    &__info {
+      flex-basis: 100%;
+      order: 1;
     }
   }
 }

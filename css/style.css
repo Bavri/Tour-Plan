@@ -1168,6 +1168,224 @@ input {
   line-height: 16px;
 }
 
+.footer {
+  padding-top: 108px;
+  padding-bottom: 46px;
+  color: #ffffff;
+  background-color: #0a223d;
+}
+
+.footer-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[4];
+      grid-template-columns: repeat(4, minmax(250px, 1fr));
+  grid-gap: 24px 0px;
+}
+
+.footer-wrapper__politics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.footer__categories {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+}
+
+.footer__icon {
+  width: 21px;
+  height: 21px;
+}
+
+.footer__icon--contact-details {
+  margin-right: 22px;
+}
+
+.footer__list--pl {
+  padding-left: 70px;
+}
+
+.footer__ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__item {
+  color: #bdbdbd;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+}
+
+.footer__item--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 22px;
+}
+
+.footer__title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: uppercase;
+}
+
+.footer__title--mb-34 {
+  margin-bottom: 34px;
+}
+
+.footer__logo-vertical {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  width: 166px;
+  height: 192px;
+}
+
+.footer__social-network {
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  grid-column: span 2;
+}
+
+.footer__links {
+  max-width: 87px;
+  margin-left: 43px;
+}
+
+.footer__link {
+  width: 21px;
+  height: 21px;
+}
+
+.footer__contact-details {
+  grid-column: span 2;
+}
+
+.footer__contact-form {
+  grid-column: span 2;
+}
+
+.footer__text {
+  color: #bdbdbd;
+}
+
+.footer__text--m-0 {
+  margin: 0;
+}
+
+.footer__text--mb-22 {
+  margin-bottom: 22px;
+}
+
+.footer__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer-input {
+  padding: 23px;
+  height: 50px;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  background-color: #fff;
+}
+
+.footer-input--mr-30 {
+  margin-right: 30px;
+}
+
+.footer__message {
+  margin-bottom: 22px;
+  padding: 18px 23px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  background-color: #fff;
+  border-radius: 4px;
+  border: none;
+  resize: none;
+}
+
+.footer__button {
+  min-width: 160px;
+  min-height: 50px;
+  padding: 18px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+  background-color: #ec1f46;
+  border-radius: 4px;
+  border: none;
+}
+
+.footer__politics {
+  max-width: 696px;
+  width: 100%;
+  margin-top: 94px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__politics-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__politics-ul:last-child {
+  margin-right: 0;
+}
+
+.footer__politics-item {
+  margin-right: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+}
+
+.footer__payment-systems {
+  width: 136px;
+  height: 22px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1184,6 +1402,63 @@ input {
   .activities-card {
     height: 230px;
     width: 230px;
+  }
+  .footer-wrapper {
+    -ms-grid-columns: (1fr)[6];
+        grid-template-columns: repeat(6, 1fr);
+    gap: 40px;
+  }
+  .footer-wrapper__politics {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .footer-input {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+  }
+  .footer-input--mr-30 {
+    margin-right: 0px;
+  }
+  .footer__logo-vertical {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    grid-column: span 2;
+  }
+  .footer__social-network {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    grid-column: span 4;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .footer__categories {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    grid-column: span 2;
+  }
+  .footer__legal {
+    grid-column: span 2;
+  }
+  .footer__additional {
+    grid-column: span 2;
+  }
+  .footer__contact-details {
+    grid-column: span 4;
+    -ms-grid-row: 3;
+    grid-row: 3;
+  }
+  .footer__contact-form {
+    grid-column: span 4;
+    -ms-grid-row: 4;
+    grid-row: 4;
+  }
+  .footer__politics {
+    max-width: 100%;
   }
 }
 
@@ -1367,6 +1642,69 @@ input {
   }
   .activities-card {
     width: 100%;
+  }
+  .footer__logo-vertical {
+    width: 104px;
+    height: 120px;
+  }
+  .footer-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+  .footer__list {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .footer__list--pl {
+    padding-left: 0px;
+  }
+  .footer__social-network {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer__title-network {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .footer__links {
+    margin-left: 0;
+  }
+  .footer__contact-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__politics {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 10px;
+  }
+  .footer__politics-ul {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .footer-input {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .footer__message {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .footer__info {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
 }
 
