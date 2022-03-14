@@ -289,9 +289,11 @@
     &__message {
       flex-basis: 100%;
     }
+    &__button {
+      order: 4;
+    }
     &__info {
       flex-basis: 100%;
-      order: 1;
     }
   }
 }
