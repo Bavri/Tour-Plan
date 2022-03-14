@@ -16,8 +16,6 @@
   }
   .packages {
     &-wrapper {
-      grid-template-columns: repeat(auto-fit, 310px);
-      gap: 15px;
     }
     &-card {
       &__img {
@@ -80,13 +78,20 @@
       margin-top: 0;
     }
     &-wrapper {
-      grid-template-columns: repeat(auto-fit, 48%);
     }
     &-card {
       &__text {
         margin-top: 0px;
         margin-bottom: 15px;
         font-size: 12px;
+      }
+      &--fat {
+        flex-direction: column;
+      }
+      &__img {
+        &--fat {
+          max-width: 100%;
+        }
       }
     }
   }
@@ -175,16 +180,6 @@
   }
   .packages {
     &-wrapper {
-      grid-template-columns: repeat(auto-fit, 48%);
-      column-gap: 4%;
-      row-gap: 15px;
-    }
-    &-card {
-      &__img {
-        &--fat {
-          max-width: 300px;
-        }
-      }
     }
   }
   .hotel {
@@ -251,9 +246,6 @@
   }
   .packages {
     &-wrapper {
-      grid-template-columns: repeat(auto-fit, 48%);
-      column-gap: 4%;
-      row-gap: 15px;
     }
     &-card {
       &__img {
