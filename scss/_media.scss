@@ -77,6 +77,7 @@
     }
 
     &-card {
+      grid-column-end: span 2;
       &__text {
         margin-top: 0px;
         margin-bottom: 15px;
@@ -230,14 +231,6 @@
     }
     &-card {
       width: 100%;
-    }
-  }
-  .packages {
-    &-card {
-      grid-column-end: span 2;
-      &__img {
-        max-height: 300px;
-      }
     }
   }
 }
