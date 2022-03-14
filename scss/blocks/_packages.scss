@@ -13,8 +13,8 @@
   }
   &-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 350px);
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
   }
 
   &-card {
@@ -60,6 +60,8 @@
       }
     }
     &__text {
+      max-height: 165px;
+      overflow: scroll;
       margin-top: 27px;
       margin-bottom: 34px;
       font-style: normal;

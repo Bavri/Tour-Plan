@@ -15,8 +15,6 @@
     width: 230px;
   }
   .packages {
-    &-wrapper {
-    }
     &-card {
       &__img {
         &--fat {
@@ -77,8 +75,7 @@
     &__title {
       margin-top: 0;
     }
-    &-wrapper {
-    }
+
     &-card {
       &__text {
         margin-top: 0px;
@@ -178,10 +175,7 @@
       }
     }
   }
-  .packages {
-    &-wrapper {
-    }
-  }
+
   .hotel {
     &-right {
       flex-direction: column;
@@ -238,6 +232,14 @@
       width: 100%;
     }
   }
+  .packages {
+    &-card {
+      grid-column-end: span 2;
+      &__img {
+        max-height: 300px;
+      }
+    }
+  }
 }
 
 @media (max-width: 568px) {
@@ -246,18 +248,17 @@
   }
   .packages {
     &-wrapper {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
     &-card {
-      &__img {
-        &--fat {
-          max-width: 250px;
-        }
-      }
       &-cost {
         margin-top: 20px;
         &--fat {
           margin-top: 20px;
         }
+      }
+      &__img {
+        max-height: 200px;
       }
       &__old-cost {
         flex-basis: 100%;
