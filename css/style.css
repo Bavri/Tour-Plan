@@ -1523,6 +1523,10 @@ input {
   .activities-card {
     width: 340px;
   }
+  .footer-input {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
 }
 
 @media (max-width: 768px) {
