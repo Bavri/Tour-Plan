@@ -68,6 +68,11 @@
       font-weight: normal;
       font-size: 14px;
       line-height: 160.6%;
+      &--scrollbar::scrollbar {
+        width: 10px;
+        background-color: inherit;
+        border-radius: 5px;
+      }
     }
 
     &__img {
@@ -143,10 +148,4 @@
       height: 14px;
     }
   }
-}
-
-#text::-webkit-scrollbar {
-  width: 10px;
-  background-color: inherit;
-  border-radius: 5px;
 }
