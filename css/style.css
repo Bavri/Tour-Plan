@@ -1650,7 +1650,9 @@ input {
   .footer-wrapper {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    gap: 30px;
+    row-gap: 30px;
+    -webkit-column-gap: 0;
+            column-gap: 0;
   }
   .footer__list--pl {
     padding-left: 0px;
