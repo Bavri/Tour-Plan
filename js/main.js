@@ -19,7 +19,7 @@ const hotelSlider = new Swiper('.hotel-slider ', {
 
 const reviewsSlider = new Swiper('.reviews-slider ', {
   // Optional parameters
- 
+  autoHeight: true,
   loop: true,
   // Navigation arrows
   navigation: {
@@ -31,6 +31,7 @@ const reviewsSlider = new Swiper('.reviews-slider ', {
   keyboard:{
     enabled:true,
   },
+  slidesPerView: 'auto',
 });
 
 

@@ -14,6 +14,20 @@
     height: 230px;
     width: 230px;
   }
+  .packages {
+    &-card {
+      &__img {
+        &--fat {
+          max-height: 484px;
+        }
+      }
+      &__text {
+        margin-top: 0px;
+        margin-bottom: 15px;
+        font-size: 12px;
+      }
+    }
+  }
 }
 
 @media (max-width: 992px) {
@@ -43,6 +57,7 @@
     margin-left: 47px;
   }
   .hotel {
+    padding-bottom: 30px;
     &-slider {
       width: 100%;
     }
@@ -56,7 +71,28 @@
       flex-direction: row;
     }
   }
+  .packages {
+    &__title {
+      margin-top: 0;
+    }
 
+    &-card {
+      grid-column-end: span 2;
+      &__text {
+        margin-top: 0px;
+        margin-bottom: 15px;
+        font-size: 12px;
+      }
+      &--fat {
+        flex-direction: column;
+      }
+      &__img {
+        &--fat {
+          max-width: 100%;
+        }
+      }
+    }
+  }
   .booking {
     width: 340px;
   }
@@ -203,7 +239,37 @@
   .logo {
     width: 99px;
   }
-
+  .packages {
+    &-wrapper {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    &-card {
+      &-cost {
+        margin-top: 20px;
+        &--fat {
+          margin-top: 20px;
+        }
+      }
+      &__img {
+        max-height: 200px;
+      }
+      &__old-cost {
+        flex-basis: 100%;
+        font-size: 12px;
+        line-height: 18px;
+      }
+      &__new-cost {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+      }
+      &__button {
+        padding: 10px 15px;
+        font-weight: 600;
+        font-size: 12px;
+      }
+    }
+  }
   .hotel {
     &-slider {
       height: 250px;
