@@ -925,6 +925,21 @@ input {
   line-height: 160.6%;
 }
 
+.packages-card__text--with-scrollbar {
+  scrollbar-width: thin;
+}
+
+.packages-card__text--with-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  background-color: inherit;
+}
+
+.packages-card__text--with-scrollbar::-webkit-scrollbar-thumb {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
 .packages-card__img {
   max-height: 350px;
   -o-object-fit: cover;
@@ -1027,12 +1042,6 @@ input {
   margin-right: 14px;
   width: 14px;
   height: 14px;
-}
-
-#text::-webkit-scrollbar {
-  width: 10px;
-  background-color: inherit;
-  border-radius: 5px;
 }
 
 .newsletter {
