@@ -2,6 +2,12 @@
   .container {
     max-width: 960px;
   }
+  .hotel {
+    padding-bottom: 60px;
+    &-slider {
+      width: 590px;
+    }
+  }
   .slider {
     width: 590px;
     &__img {
@@ -14,22 +20,76 @@
     height: 230px;
     width: 230px;
   }
-  .packages {
-    &-card {
-      &__img {
-        &--fat {
-          max-height: 484px;
-        }
+  .footer {
+    padding-top: 73px;
+    padding-bottom: 33px;
+    &-wrapper {
+      grid-template-columns: repeat(6, 1fr);
+      gap: 40px;
+      &__politics {
+        justify-content: flex-start;
       }
-      &__text {
-        margin-top: 0px;
-        margin-bottom: 15px;
-        font-size: 12px;
+    }
+    &-input {
+      flex-basis: 45%;
+      &--mr-30 {
+        margin-right: 0px;
+      }
+    }
+    &__logo-vertical {
+      grid-row: 1/2;
+      grid-column: span 2;
+    }
+    &__social-network {
+      grid-row: 1/2;
+      grid-column: span 4;
+      align-self: center;
+    }
+    &__categories {
+      grid-row: 2/3;
+      grid-column: span 2;
+    }
+    &__legal {
+      grid-column: span 2;
+    }
+    &__additional {
+      grid-column: span 2;
+    }
+    &__contact {
+      &-details {
+        grid-column: span 5;
+        grid-row: 3;
+      }
+      &-form {
+        margin-top: 30px;
+        grid-column: span 5;
+        grid-row: 4;
+      }
+    }
+    &__politics {
+      max-width: 100%;
+    }
+
+    .packages {
+      padding-bottom: 60px;
+      &__politics {
+        margin-top: 63px;
+      }
+      &-card {
+        &__img {
+          &--fat {
+            max-height: 484px;
+          }
+        }
+        &__text {
+          margin-top: 0px;
+          margin-bottom: 15px;
+          font-size: 12px;
+        }
       }
     }
   }
 }
-
 @media (max-width: 992px) {
   .container,
   .newsletter-wrapper {
@@ -57,7 +117,7 @@
     margin-left: 47px;
   }
   .hotel {
-    padding-bottom: 30px;
+    padding-bottom: 60px;
     &-slider {
       width: 100%;
     }
@@ -72,8 +132,9 @@
     }
   }
   .packages {
+    padding-bottom: 60px;
     &__title {
-      margin-top: 0;
+      margin-bottom: 40px;
     }
 
     &-card {
@@ -101,6 +162,11 @@
   }
   .reviews {
     padding-bottom: 60px;
+    &__title {
+      font-size: 30px;
+      line-height: 38px;
+      margin-bottom: 50px;
+    }
     &-slider {
       &__item {
         max-width: 580px;
@@ -109,12 +175,17 @@
   }
 
   .activities {
+    padding-bottom: 70px;
     &__wrapper {
       flex-wrap: wrap;
       gap: 20px;
     }
     &-card {
       width: 340px;
+    }
+    &__title {
+      font-size: 18px;
+      line-height: 23px;
     }
   }
 }
@@ -154,6 +225,8 @@
     flex-basis: content;
   }
   .hotel {
+    padding-top: 0;
+    padding-bottom: 40px;
     &-slider {
       height: 350px;
     }
@@ -182,6 +255,10 @@
       flex-direction: column;
     }
   }
+  .packages {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
   .booking {
     width: 100%;
     margin-bottom: 20px;
@@ -193,6 +270,8 @@
     }
   }
   .newsletter {
+    padding-top: 80px;
+    padding-bottom: 80px;
     &-wrapper {
       max-width: 576px;
       width: 92%;
@@ -203,6 +282,11 @@
 
   .reviews {
     padding-bottom: 50px;
+    &__title {
+      margin-bottom: 40px;
+      font-size: 18px;
+      line-height: 23px;
+    }
     &-slider {
       &__item {
         padding: 0 30px 30px;
@@ -225,12 +309,95 @@
     }
   }
   .activities {
+    &__title {
+      margin-bottom: 36px;
+    }
     padding-top: 40px;
+    padding-bottom: 60px;
     &__wrapper {
       gap: 28px;
     }
     &-card {
       width: 100%;
+    }
+  }
+  .footer {
+    padding-bottom: 23px;
+    padding-top: 69px;
+    &__logo-vertical {
+      width: 104px;
+      height: 120px;
+    }
+
+    &-wrapper {
+      grid-template-columns: 1fr;
+      row-gap: 30px;
+      column-gap: 0;
+    }
+
+    &__list {
+      &--pl {
+        padding-left: 0px;
+      }
+    }
+    &__social-network {
+      flex-direction: column;
+      grid-row: 2;
+      grid-column: 1;
+    }
+    &__links {
+      margin-left: 0;
+      margin-top: 7px;
+    }
+    &__legal {
+      grid-row: 3;
+      grid-column: 1;
+    }
+    &__additional {
+      grid-row: 4;
+      grid-column: 1;
+    }
+    &__categories {
+      grid-row: 5;
+      grid-column: 1;
+    }
+    &__icon--contact-details {
+      margin-right: 10px;
+    }
+    &__contact {
+      &-details {
+        grid-row: 6;
+        grid-column: 1;
+      }
+      &-form {
+        margin-top: 30px;
+        grid-row: 7;
+        grid-column: 1;
+      }
+    }
+    &__button {
+      order: 4;
+    }
+    &__info {
+      margin-bottom: 15px;
+      flex-basis: 100%;
+    }
+    &__politics {
+      margin-top: 30px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__payment-systems {
+      margin-top: 10px;
+    }
+    &-input {
+      flex-basis: 100%;
+    }
+    &__message {
+      width: 100%;
+    }
+    &__text {
+      word-wrap: break-word;
     }
   }
 }
@@ -288,5 +455,11 @@
   .subscribe {
     max-width: 280px;
     width: 100%;
+  }
+  .footer {
+    &__icon {
+      max-width: 21px;
+      flex-basis: 100%;
+    }
   }
 }
