@@ -844,7 +844,7 @@ input {
   line-height: 45px;
   text-align: center;
   text-transform: uppercase;
-  color: #bdbdbd;
+  color: #333333;
 }
 
 .packages-wrapper {
@@ -1132,7 +1132,7 @@ input {
   line-height: 38px;
   text-align: center;
   text-transform: uppercase;
-  color: #bdbdbd;
+  color: #333333;
 }
 
 .reviews-slider {
@@ -1774,6 +1774,8 @@ input {
     padding-bottom: 60px;
   }
   .reviews__title {
+    font-size: 30px;
+    line-height: 38px;
     margin-bottom: 50px;
   }
   .reviews-slider__item {
@@ -1789,6 +1791,10 @@ input {
   }
   .activities-card {
     width: 340px;
+  }
+  .activities__title {
+    font-size: 18px;
+    line-height: 23px;
   }
 }
 
@@ -1898,6 +1904,8 @@ input {
   }
   .reviews__title {
     margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 23px;
   }
   .reviews-slider__item {
     padding: 0 30px 30px;

@@ -163,6 +163,8 @@
   .reviews {
     padding-bottom: 60px;
     &__title {
+      font-size: 30px;
+      line-height: 38px;
       margin-bottom: 50px;
     }
     &-slider {
@@ -180,6 +182,10 @@
     }
     &-card {
       width: 340px;
+    }
+    &__title {
+      font-size: 18px;
+      line-height: 23px;
     }
   }
 }
@@ -278,6 +284,8 @@
     padding-bottom: 50px;
     &__title {
       margin-bottom: 40px;
+      font-size: 18px;
+      line-height: 23px;
     }
     &-slider {
       &__item {
