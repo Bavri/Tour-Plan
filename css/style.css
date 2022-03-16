@@ -928,9 +928,13 @@ input {
   line-height: 160.6%;
 }
 
-.packages-card__text--scrollbar::scrollbar {
-  width: 10px;
-  background-color: inherit;
+.packages-card__text--with-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  background-color: transparent;
+}
+
+.packages-card__text--with-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
   border-radius: 5px;
 }
 

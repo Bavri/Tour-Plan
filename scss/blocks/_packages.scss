@@ -69,10 +69,15 @@
       font-weight: normal;
       font-size: 14px;
       line-height: 160.6%;
-      &--scrollbar::scrollbar {
-        width: 10px;
-        background-color: inherit;
-        border-radius: 5px;
+      &--with-scrollbar {
+        &::-webkit-scrollbar {
+          width: 6px;
+          background-color: transparent;
+        }
+        &::-webkit-scrollbar-thumb {
+          background-color: $light;
+          border-radius: 5px;
+        }
       }
     }
 
@@ -84,6 +89,7 @@
         max-height: 530px;
       }
     }
+
     &--fat {
       grid-column-end: span 2;
       flex-direction: row;
