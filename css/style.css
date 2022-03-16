@@ -598,6 +598,7 @@ input {
 .hotel-slider {
   width: 728px;
   height: 450px;
+  margin-left: 0;
   position: relative;
 }
 
@@ -747,8 +748,9 @@ input {
 }
 
 .booking__icon {
-  width: 14px;
-  height: 14px;
+  width: 21px;
+  height: 21px;
+  color: #fff;
 }
 
 .booking__text {
@@ -835,13 +837,14 @@ input {
 
 .packages__title {
   margin-bottom: 65px;
+  margin-top: 0;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
   line-height: 45px;
   text-align: center;
   text-transform: uppercase;
-  color: #333333;
+  color: #bdbdbd;
 }
 
 .packages-wrapper {
@@ -923,6 +926,12 @@ input {
   font-weight: normal;
   font-size: 14px;
   line-height: 160.6%;
+}
+
+.packages-card__text--scrollbar::scrollbar {
+  width: 10px;
+  background-color: inherit;
+  border-radius: 5px;
 }
 
 .packages-card__img {
@@ -1029,12 +1038,6 @@ input {
   height: 14px;
 }
 
-#text::-webkit-scrollbar {
-  width: 10px;
-  background-color: inherit;
-  border-radius: 5px;
-}
-
 .newsletter {
   position: relative;
   padding-top: 98px;
@@ -1122,13 +1125,14 @@ input {
 }
 
 .reviews__title {
+  margin-top: 0;
   margin-bottom: 70px;
   font-weight: 700;
   font-size: 36px;
   line-height: 38px;
   text-align: center;
   text-transform: uppercase;
-  color: #333333;
+  color: #bdbdbd;
 }
 
 .reviews-slider {
@@ -1270,7 +1274,8 @@ input {
 }
 
 .activities__title {
-  margin-bottom: 23px;
+  margin-top: 0;
+  margin-bottom: 57px;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -1594,6 +1599,12 @@ input {
   .container {
     max-width: 960px;
   }
+  .hotel {
+    padding-bottom: 60px;
+  }
+  .hotel-slider {
+    width: 590px;
+  }
   .slider {
     width: 590px;
   }
@@ -1607,7 +1618,10 @@ input {
     height: 230px;
     width: 230px;
   }
-
+  .footer {
+    padding-top: 73px;
+    padding-bottom: 33px;
+  }
   .footer-wrapper {
     -ms-grid-columns: (1fr)[6];
         grid-template-columns: repeat(6, 1fr);
@@ -1658,17 +1672,24 @@ input {
     grid-row: 3;
   }
   .footer__contact-form {
+    margin-top: 30px;
     grid-column: span 5;
     -ms-grid-row: 4;
     grid-row: 4;
   }
   .footer__politics {
     max-width: 100%;
-
-  .packages-card__img--fat {
+  }
+  .footer .packages {
+    padding-bottom: 60px;
+  }
+  .footer .packages__politics {
+    margin-top: 63px;
+  }
+  .footer .packages-card__img--fat {
     max-height: 484px;
   }
-  .packages-card__text {
+  .footer .packages-card__text {
     margin-top: 0px;
     margin-bottom: 15px;
     font-size: 12px;
@@ -1699,7 +1720,7 @@ input {
     margin-left: 47px;
   }
   .hotel {
-    padding-bottom: 30px;
+    padding-bottom: 60px;
   }
   .hotel-slider {
     width: 100%;
@@ -1719,8 +1740,11 @@ input {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+  .packages {
+    padding-bottom: 60px;
+  }
   .packages__title {
-    margin-top: 0;
+    margin-bottom: 40px;
   }
   .packages-card {
     -ms-grid-column-span: 2;
@@ -1749,8 +1773,14 @@ input {
   .reviews {
     padding-bottom: 60px;
   }
+  .reviews__title {
+    margin-bottom: 50px;
+  }
   .reviews-slider__item {
     max-width: 580px;
+  }
+  .activities {
+    padding-bottom: 70px;
   }
   .activities__wrapper {
     -ms-flex-wrap: wrap;
@@ -1800,6 +1830,10 @@ input {
     -ms-flex-preferred-size: content;
         flex-basis: content;
   }
+  .hotel {
+    padding-top: 0;
+    padding-bottom: 40px;
+  }
   .hotel-slider {
     height: 350px;
   }
@@ -1830,6 +1864,10 @@ input {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .packages {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
   .booking {
     width: 100%;
     margin-bottom: 20px;
@@ -1839,6 +1877,10 @@ input {
   }
   .map__content {
     width: 100%;
+  }
+  .newsletter {
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
   .newsletter-wrapper {
     max-width: 576px;
@@ -1853,6 +1895,9 @@ input {
   }
   .reviews {
     padding-bottom: 50px;
+  }
+  .reviews__title {
+    margin-bottom: 40px;
   }
   .reviews-slider__item {
     padding: 0 30px 30px;
@@ -1873,12 +1918,20 @@ input {
   }
   .activities {
     padding-top: 40px;
+    padding-bottom: 60px;
+  }
+  .activities__title {
+    margin-bottom: 36px;
   }
   .activities__wrapper {
     gap: 28px;
   }
   .activities-card {
     width: 100%;
+  }
+  .footer {
+    padding-bottom: 23px;
+    padding-top: 69px;
   }
   .footer__logo-vertical {
     width: 104px;
@@ -1953,6 +2006,7 @@ input {
         flex-basis: 100%;
   }
   .footer__politics {
+    margin-top: 30px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
