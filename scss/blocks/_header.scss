@@ -36,6 +36,11 @@
       line-height: 18px;
       text-transform: uppercase;
     }
+    &__item {
+      &--invisible {
+        display: none;
+      }
+    }
   }
 }
 .logo {

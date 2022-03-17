@@ -14,13 +14,13 @@
   <title>Best Tour Plan</title>
 </head>
 <body>
-  <header class="navbar">
+  <header class="navbar navbar--mobile--fixed ">
       <div class="container">
         <div class="navbar-top">
           <a href="#" class="logo">
             <img class="logo__img-horizontal" src="./img/logo-horizontal.png" alt="Logo">
           </a>
-          <form action="#" class="search navbar__search">
+          <form action="#" class="search navbar__search navbar__search--invisible">
             <input type="text" placeholder="Search Location" class="search__input">
             <button class="button search__button">
               <svg class="icon search__icon">
@@ -28,7 +28,7 @@
               </svg>
             </button>
           </form>
-          <a href="" class="user navbar__user">
+          <a href="" class="user navbar__user navbar__user--invisible">
             <img src="./img/user-avatar.jpg" alt="Avatar"class="user__avatar">
             <span class="user__name">Natan</span>
           </a>
@@ -40,9 +40,25 @@
         </div>
         
       </div>
-        <div class="navbar-bottom">
+        <div class="navbar-bottom ">
           <div class="container">
-            <ul class="navbar-menu">
+            <ul class="navbar-menu ">
+              <li class="navbar-menu__item navbar-menu__item--visible navbar-menu__item--invisible">
+                <a href="" class="user navbar__user">
+                  <img src="./img/user-avatar.jpg" alt="Avatar" class="user__avatar">
+                  <span class="user__name">Natan</span>
+                </a>
+              </li>
+              <li class="navbar-menu__item navbar-menu__item--visible navbar-menu__item--invisible">
+                <form action="#" class="search navbar__search">
+                  <input type="text" placeholder="Search Location" class="search__input">
+                  <button class="button search__button">
+                    <svg class="icon search__icon">
+                      <use xlink:href="./img/sprite.svg#ico-search"></use>
+                    </svg>
+                  </button>
+                </form>
+              </li>
               <li class="navbar-menu__item">
                 <a href="#" class="navbar-menu__link">All Deals</a>
               </li>
