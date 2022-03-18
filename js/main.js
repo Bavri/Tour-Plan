@@ -38,12 +38,12 @@ const reviewsSlider = new Swiper('.reviews-slider ', {
 $('.newsletter').parallax({imageSrc: '../img/bg-newsletter.jpg'});
 
 
-let menuButton = document.querySelector(".menu-button");
+const menuButton = document.querySelector(".menu-button");
 
 menuButton.addEventListener("click", function () {
   console.log("Клик по кнопке меню");
   document
   .querySelector(".navbar-bottom").classList.toggle("navbar-bottom--visible");
   document
-  .querySelector(".body").classList.toggle("body--nosckrol");
+  .querySelector(".body").classList.toggle("body--no-sckroll");
 });
