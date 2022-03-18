@@ -11,6 +11,8 @@
     }
   }
   &__search {
+    max-width: 350px;
+    width: 100%;
     margin: auto;
     margin-left: 108px;
   }
@@ -47,7 +49,8 @@
   width: 177px;
 }
 .search {
-  width: 350px;
+  max-width: 350px;
+  width: 100%;
   display: flex;
   position: relative;
   overflow: hidden;

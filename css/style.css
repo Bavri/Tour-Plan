@@ -397,6 +397,8 @@ input {
 }
 
 .navbar__search {
+  max-width: 350px;
+  width: 100%;
   margin: auto;
   margin-left: 108px;
 }
@@ -441,7 +443,8 @@ input {
 }
 
 .search {
-  width: 350px;
+  max-width: 350px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1723,8 +1726,7 @@ input {
     font-size: 12px;
     line-height: 15px;
   }
-  .search {
-    width: 340px;
+  .navbar__search {
     margin-left: 47px;
   }
   .hotel {
@@ -1814,37 +1816,35 @@ input {
   body {
     padding-top: 79px;
   }
-  .search {
-    margin-left: 0;
-    margin-bottom: 19px;
-  }
   .navbar-bottom {
-    padding: 31px 38px 68px 38px;
-    display: none;
     position: fixed;
     top: 79px;
     left: 0;
     right: 0;
     bottom: 0;
-  }
-  .navbar-bottom__search {
-    max-width: 350px;
-    margin-left: 0;
-    margin-bottom: 19px;
+    display: none;
+    overflow-y: scroll;
   }
   .navbar-bottom--visible {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
+  .navbar-bottom--with-scrollbar::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+  }
+  .navbar-bottom--with-scrollbar::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
   .navbar--mobile--fixed {
-    height: 79px;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: 99;
+    height: 79px;
   }
   .navbar__search--invisible, .navbar__user--invisible {
     display: none;
@@ -1860,6 +1860,11 @@ input {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .search {
+    max-width: 350px;
+    margin-left: 0;
+    margin-bottom: 19px;
   }
   .menu-button {
     width: 16px;
@@ -2110,9 +2115,6 @@ input {
 }
 
 @media (max-width: 568px) {
-  .search {
-    max-width: 240px;
-  }
   .logo {
     width: 99px;
   }
@@ -2166,6 +2168,16 @@ input {
     max-width: 21px;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+}
+
+.body--nosckrol {
+  overflow: hidden;
+}
+
+@media (max-height: 532px) {
+  .navbar-menu {
+    gap: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
