@@ -38,12 +38,12 @@ const reviewsSlider = new Swiper('.reviews-slider ', {
 $('.newsletter').parallax({imageSrc: '../img/bg-newsletter.jpg'});
 
 
-const menuButton = document.querySelector(".menu-button");
+const menuButton = document.querySelector('.menu-button');
 
-menuButton.addEventListener("click", function () {
-  console.log("Клик по кнопке меню");
+menuButton.addEventListener('click', function () {
+  
   document
-  .querySelector(".navbar-bottom").classList.toggle("navbar-bottom--visible");
+  .querySelector('.navbar-bottom').classList.toggle('navbar-bottom--visible');
   document
-  .querySelector(".body").classList.toggle("body--no-sckroll");
+  .querySelector('body').classList.toggle('scroll-hidden');
 });

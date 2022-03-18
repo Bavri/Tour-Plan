@@ -374,6 +374,10 @@ input {
   outline: none;
 }
 
+.scroll-hidden {
+  overflow: hidden;
+}
+
 .navbar {
   background-color: #fff;
 }
@@ -2169,10 +2173,6 @@ input {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
-}
-
-.body--nosckrol {
-  overflow: hidden;
 }
 
 @media (max-height: 532px) {
