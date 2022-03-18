@@ -40,10 +40,11 @@ $('.newsletter').parallax({imageSrc: '../img/bg-newsletter.jpg'});
 
 const menuButton = document.querySelector('.menu-button');
 
-menuButton.addEventListener('click', function () {
-  
+function toggleMobileMenu() {
   document
-  .querySelector('.navbar-bottom').classList.toggle('navbar-bottom--visible');
+    .querySelector('.navbar-bottom').classList.toggle('navbar-bottom--visible');
   document
-  .querySelector('body').classList.toggle('scroll-hidden');
-});
+    .querySelector('body').classList.toggle('scroll-hidden');
+}
+
+menuButton.addEventListener('click',  toggleMobileMenu);
