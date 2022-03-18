@@ -374,6 +374,10 @@ input {
   outline: none;
 }
 
+.scroll-hidden {
+  overflow: hidden;
+}
+
 .navbar {
   background-color: #fff;
 }
@@ -397,6 +401,8 @@ input {
 }
 
 .navbar__search {
+  max-width: 350px;
+  width: 100%;
   margin: auto;
   margin-left: 108px;
 }
@@ -432,12 +438,17 @@ input {
   text-transform: uppercase;
 }
 
+.navbar-menu__item--invisible {
+  display: none;
+}
+
 .logo {
   width: 177px;
 }
 
 .search {
-  width: 350px;
+  max-width: 350px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1719,8 +1730,7 @@ input {
     font-size: 12px;
     line-height: 15px;
   }
-  .search {
-    width: 340px;
+  .navbar__search {
     margin-left: 47px;
   }
   .hotel {
@@ -1807,8 +1817,58 @@ input {
     max-width: 576px;
     width: 92%;
   }
-  .navbar__search, .navbar-menu, .navbar__user {
+  body {
+    padding-top: 79px;
+  }
+  .navbar-bottom {
+    position: fixed;
+    top: 79px;
+    left: 0;
+    right: 0;
+    bottom: 0;
     display: none;
+    overflow-y: scroll;
+  }
+  .navbar-bottom--visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar-bottom--with-scrollbar::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+  }
+  .navbar-bottom--with-scrollbar::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+  .navbar--mobile--fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    height: 79px;
+  }
+  .navbar__search--invisible, .navbar__user--invisible {
+    display: none;
+  }
+  .navbar-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+  .navbar-menu__item--visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .search {
+    max-width: 350px;
+    margin-left: 0;
+    margin-bottom: 19px;
   }
   .menu-button {
     width: 16px;
@@ -1835,6 +1895,22 @@ input {
     width: 16px;
     height: 1px;
     background-color: black;
+  }
+  .user {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .user__name {
+    margin-top: 10px;
+    margin-left: 0;
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
   }
   .stars {
     -ms-flex-preferred-size: content;
@@ -2096,6 +2172,12 @@ input {
     max-width: 21px;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+}
+
+@media (max-height: 532px) {
+  .navbar-menu {
+    gap: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */

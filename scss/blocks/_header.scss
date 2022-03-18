@@ -11,6 +11,8 @@
     }
   }
   &__search {
+    max-width: 350px;
+    width: 100%;
     margin: auto;
     margin-left: 108px;
   }
@@ -36,13 +38,19 @@
       line-height: 18px;
       text-transform: uppercase;
     }
+    &__item {
+      &--invisible {
+        display: none;
+      }
+    }
   }
 }
 .logo {
   width: 177px;
 }
 .search {
-  width: 350px;
+  max-width: 350px;
+  width: 100%;
   display: flex;
   position: relative;
   overflow: hidden;

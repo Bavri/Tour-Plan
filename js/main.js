@@ -36,3 +36,15 @@ const reviewsSlider = new Swiper('.reviews-slider ', {
 
 
 $('.newsletter').parallax({imageSrc: '../img/bg-newsletter.jpg'});
+
+
+const menuButton = document.querySelector('.menu-button');
+
+function toggleMobileMenu() {
+  document
+    .querySelector('.navbar-bottom').classList.toggle('navbar-bottom--visible');
+  document
+    .querySelector('body').classList.toggle('scroll-hidden');
+}
+
+menuButton.addEventListener('click',  toggleMobileMenu);
