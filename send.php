@@ -4,20 +4,30 @@ require 'phpmailer/PHPMailer.php';
 require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
+
 // Переменные, которые отправляет пользователь
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
+$email = $_POST['email'];
 
 
 // Формирование самого письма
-$title = "Best Tour Plan новое обращение";
-$body = "
-<h2>Новое письмо</h2>
-<b>Имя:</b> $name<br>
-<b>Номер:</b> $phone<br><br>
-<b>Сообщение:</b><br>$message
-";
+if (empty($email)) {
+    $title = "Best Tour Plan новое обращение";
+    $body = "
+    <h2>Новое письмо</h2>
+    <b>Имя:</b> $name<br>
+    <b>Номер:</b> $phone<br><br>
+    <b>Сообщение:</b><br>$message
+    ";
+} else {
+    $title = "Подписка на рассылку Best Tour Plan";
+    $body = "
+    <h2>Новое письмо</h2>
+    <b>Подписка оформлена</b>
+    ";
+}
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -56,4 +66,13 @@ else {$result = "error";}
 }
 
 // Отображение результата
-header('Location: thank-you-appeal.html');
+if (empty($email)) {
+    header('Location: thank-you-appeal.html');
+} else {
+    header('Location: subscribe.html');
+}
+
+
+
+
+
