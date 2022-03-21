@@ -61,7 +61,7 @@ header('Location: thank-you-appeal.html');
 
 } else if (isset($_POST['subscribe']) {
 $email = $_POST['email'];
-// Формирование самого письма
+// Формирование самого письма   
 $title = "Best Tour Plan новый сабскрабер";
 $body = "
 <h2>Новое письмо</h2>
