@@ -774,13 +774,13 @@
         
         <div class="footer__contact-form">
           <h3 class="footer__title footer__title--mb-34">Send us a message</h3>
-          <div class="footer__form">
-            <input type="text" class="input footer-input footer-input--mr-30 " placeholder="Your Full Name*">
-            <input type="text" class="input footer-input" placeholder="Phone Number*">
-            <textarea class="footer__message" cols="30" rows="10" placeholder="Phone Message*"></textarea>
-            <button class="button footer__button">Send</button>
+          <form action="send.php" method="post" class="footer__form">
+            <input name="name" type="text" class="input footer-input footer-input--mr-30 " placeholder="Your Full Name*">
+            <input name="phone" type="text" class="input footer-input" placeholder="Phone Number*">
+            <textarea name="message" class="footer__message" cols="30" rows="10" placeholder="Phone Message*"></textarea>
+            <button type="submit" class="button footer__button">Send</button>
             <span class="footer__info">* Required Fields</span>
-          </div>
+          </form>
         </div>
       </div>
 
