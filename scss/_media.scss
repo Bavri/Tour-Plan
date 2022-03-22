@@ -1,535 +1,534 @@
 @media (max-width: 1200px) {
-  .container {
-    max-width: 960px;
-  }
-  .hotel {
-    padding-bottom: 60px;
-    &-slider {
-      width: 590px;
+    .container {
+        max-width: 960px;
     }
-  }
-  .slider {
-    width: 590px;
-    &__img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+    .hotel {
+        padding-bottom: 60px;
+        &-slider {
+            width: 590px;
+        }
     }
-  }
-  .activities-card {
-    height: 230px;
-    width: 230px;
-  }
-  .footer {
-    padding-top: 73px;
-    padding-bottom: 33px;
-    &-wrapper {
-      grid-template-columns: repeat(6, 1fr);
-      gap: 40px;
-      &__politics {
-        justify-content: flex-start;
-      }
-    }
-    &-input {
-      flex-basis: 45%;
-      &--mr-30 {
-        margin-right: 0px;
-      }
-    }
-    &__logo-vertical {
-      grid-row: 1/2;
-      grid-column: span 2;
-    }
-    &__social-network {
-      grid-row: 1/2;
-      grid-column: span 4;
-      align-self: center;
-    }
-    &__categories {
-      grid-row: 2/3;
-      grid-column: span 2;
-    }
-    &__legal {
-      grid-column: span 2;
-    }
-    &__additional {
-      grid-column: span 2;
-    }
-    &__contact {
-      &-details {
-        grid-column: span 5;
-        grid-row: 3;
-      }
-      &-form {
-        margin-top: 30px;
-        grid-column: span 5;
-        grid-row: 4;
-      }
-    }
-    &__politics {
-      max-width: 100%;
-    }
-
-    .packages {
-      padding-bottom: 60px;
-      &__politics {
-        margin-top: 63px;
-      }
-      &-card {
+    .slider {
+        width: 590px;
         &__img {
-          &--fat {
-            max-height: 484px;
-          }
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
-        &__text {
-          margin-top: 0px;
-          margin-bottom: 15px;
-          font-size: 12px;
-        }
-      }
     }
-  }
+    .activities-card {
+        height: 230px;
+        width: 230px;
+    }
+    .footer {
+        padding-top: 73px;
+        padding-bottom: 33px;
+        &-wrapper {
+            grid-template-columns: repeat(6, 1fr);
+            gap: 40px;
+            &__politics {
+                justify-content: flex-start;
+            }
+        }
+        &-input {
+            flex-basis: 45%;
+            &--mr-30 {
+                margin-right: 0px;
+            }
+        }
+        &__logo-vertical {
+            grid-row: 1/2;
+            grid-column: span 2;
+        }
+        &__social-network {
+            grid-row: 1/2;
+            grid-column: span 4;
+            align-self: center;
+        }
+        &__categories {
+            grid-row: 2/3;
+            grid-column: span 2;
+        }
+        &__legal {
+            grid-column: span 2;
+        }
+        &__additional {
+            grid-column: span 2;
+        }
+        &__contact {
+            &-details {
+                grid-column: span 5;
+                grid-row: 3;
+            }
+            &-form {
+                margin-top: 30px;
+                grid-column: span 5;
+                grid-row: 4;
+            }
+        }
+        &__politics {
+            max-width: 100%;
+        }
+        .packages {
+            padding-bottom: 60px;
+            &__politics {
+                margin-top: 63px;
+            }
+            &-card {
+                &__img {
+                    &--fat {
+                        max-height: 484px;
+                    }
+                }
+                &__text {
+                    margin-top: 0px;
+                    margin-bottom: 15px;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
 }
+
 @media (max-width: 992px) {
-  .container,
-  .newsletter-wrapper {
-    max-width: 700px;
-  }
-  .logo {
-    width: 133px;
-  }
-  .navbar {
-    &-top {
-      padding-top: 30px;
-      padding-bottom: 30px;
+    .container,
+    .newsletter-wrapper {
+        max-width: 700px;
     }
-
-    &-menu {
-      padding: 22px 0;
-      &__link {
-        font-size: 12px;
-        line-height: 15px;
-      }
+    .logo {
+        width: 133px;
     }
-    &__search {
-      margin-left: 47px;
-    }
-  }
-
-  .hotel {
-    padding-bottom: 60px;
-    &-slider {
-      width: 100%;
-    }
-    &-grid {
-      flex-direction: column;
-    }
-    &__slider {
-      margin-bottom: 30px;
-    }
-    &-right {
-      flex-direction: row;
-    }
-  }
-  .packages {
-    padding-bottom: 60px;
-    &__title {
-      margin-bottom: 40px;
-    }
-
-    &-card {
-      grid-column-end: span 2;
-      &__text {
-        margin-top: 0px;
-        margin-bottom: 15px;
-        font-size: 12px;
-      }
-      &--fat {
-        flex-direction: column;
-      }
-      &__img {
-        &--fat {
-          max-width: 100%;
+    .navbar {
+        &-top {
+            padding-top: 30px;
+            padding-bottom: 30px;
         }
-      }
+        &-menu {
+            padding: 22px 0;
+            &__link {
+                font-size: 12px;
+                line-height: 15px;
+            }
+        }
+        &__search {
+            margin-left: 47px;
+        }
     }
-  }
-  .booking {
-    width: 340px;
-  }
-  .map {
-    width: 340px;
-  }
-  .reviews {
-    padding-bottom: 60px;
-    &__title {
-      font-size: 30px;
-      line-height: 38px;
-      margin-bottom: 50px;
+    .hotel {
+        padding-bottom: 60px;
+        &-slider {
+            width: 100%;
+        }
+        &-grid {
+            flex-direction: column;
+        }
+        &__slider {
+            margin-bottom: 30px;
+        }
+        &-right {
+            flex-direction: row;
+        }
     }
-    &-slider {
-      &__item {
-        max-width: 580px;
-      }
+    .packages {
+        padding-bottom: 60px;
+        &__title {
+            margin-bottom: 40px;
+        }
+        &-card {
+            grid-column-end: span 2;
+            &__text {
+                margin-top: 0px;
+                margin-bottom: 15px;
+                font-size: 12px;
+            }
+            &--fat {
+                flex-direction: column;
+            }
+            &__img {
+                &--fat {
+                    max-width: 100%;
+                }
+            }
+        }
     }
-  }
-
-  .activities {
-    padding-bottom: 70px;
-    &__wrapper {
-      flex-wrap: wrap;
-      gap: 20px;
+    .booking {
+        width: 340px;
     }
-    &-card {
-      width: 340px;
+    .map {
+        width: 340px;
     }
-    &__title {
-      font-size: 18px;
-      line-height: 23px;
+    .reviews {
+        padding-bottom: 60px;
+        &__title {
+            font-size: 30px;
+            line-height: 38px;
+            margin-bottom: 50px;
+        }
+        &-slider {
+            &__item {
+                max-width: 580px;
+            }
+        }
     }
-  }
+    .activities {
+        padding-bottom: 70px;
+        &__wrapper {
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        &-card {
+            width: 340px;
+        }
+        &__title {
+            font-size: 18px;
+            line-height: 23px;
+        }
+    }
 }
 
 @media (max-width: 768px) {
-  .container {
-    max-width: 576px;
-    width: 92%;
-  }
-  body {
-    padding-top: 79px;
-  }
-
-  .navbar {
-    &-bottom {
-      position: fixed;
-      top: 79px;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      display: none;
-      overflow-y: scroll;
-
-      &--visible {
-        display: flex;
-      }
-      &--with-scrollbar {
-        &::-webkit-scrollbar {
-          width: 5px;
-          background-color: transparent;
+    .container {
+        max-width: 576px;
+        width: 92%;
+    }
+    body {
+        padding-top: 79px;
+    }
+    .navbar {
+        &-bottom {
+            position: fixed;
+            top: 79px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: none;
+            overflow-y: scroll;
+            &--visible {
+                display: flex;
+            }
+            &--with-scrollbar {
+                &::-webkit-scrollbar {
+                    width: 5px;
+                    background-color: transparent;
+                }
+                &::-webkit-scrollbar-thumb {
+                    background-color: transparent;
+                }
+            }
         }
-        &::-webkit-scrollbar-thumb {
-          background-color: transparent;
+        &--mobile {
+            &--fixed {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 99;
+                height: 79px;
+            }
         }
-      }
-    }
-    &--mobile {
-      &--fixed {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 99;
-        height: 79px;
-      }
-    }
-    &__search--invisible,
-    &__user--invisible {
-      display: none;
-    }
-    &-menu {
-      flex-direction: column;
-      gap: 20px;
-      &__item {
-        &--visible {
-          display: flex;
+        &__search--invisible,
+        &__user--invisible {
+            display: none;
         }
-      }
+        &-menu {
+            flex-direction: column;
+            gap: 20px;
+            &__item {
+                &--visible {
+                    display: flex;
+                }
+            }
+        }
     }
-  }
-  .search {
-    max-width: 350px;
-    margin-left: 0;
-    margin-bottom: 19px;
-  }
-  .menu {
-    &-button {
-      width: 16px;
-      height: 11px;
-      padding: 0;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-direction: column;
-      border: none;
-      background-color: $light;
-      cursor: pointer;
-      &__line {
-        width: 16px;
-        height: 1px;
-        background-color: black;
-      }
-    }
-  }
-  .user {
-    align-items: center;
-    flex-direction: column;
-    &__name {
-      margin-top: 10px;
-      margin-left: 0;
-      font-size: 14px;
-      line-height: 18px;
-      color: $light;
-    }
-  }
-
-  .stars {
-    flex-basis: content;
-  }
-  .hotel {
-    padding-top: 0;
-    padding-bottom: 40px;
-    &-slider {
-      height: 350px;
-    }
-    &-wrapper {
-      justify-content: space-between;
-    }
-    &-name {
-      flex-basis: 100%;
-    }
-    &-info {
-      &__rating {
-        display: none;
-      }
-      &__text {
-        width: 100%;
-      }
-      &__offer {
-        order: -1;
+    .search {
+        max-width: 350px;
         margin-left: 0;
-      }
+        margin-bottom: 19px;
     }
-  }
-
-  .hotel {
-    &-right {
-      flex-direction: column;
-    }
-  }
-  .packages {
-    padding-top: 20px;
-    padding-bottom: 40px;
-  }
-  .booking {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  .map {
-    width: 100%;
-    &__content {
-      width: 100%;
-    }
-  }
-  .newsletter {
-    padding-top: 80px;
-    padding-bottom: 80px;
-    &-wrapper {
-      max-width: 576px;
-      width: 92%;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  }
-
-  .reviews {
-    padding-bottom: 50px;
-    &__title {
-      margin-bottom: 40px;
-      font-size: 18px;
-      line-height: 23px;
-    }
-    &-slider {
-      &__item {
-        padding: 0 30px 30px;
-        &::after,
-        &::before {
-          display: none;
+    .menu {
+        &-button {
+            width: 16px;
+            height: 11px;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            border: none;
+            background-color: $light;
+            cursor: pointer;
+            &__line {
+                width: 16px;
+                height: 1px;
+                background-color: black;
+            }
         }
-      }
-      &__button {
-        top: 45px;
-        &-prev {
-          left: 25%;
-          margin-left: -40px;
+    }
+    .user {
+        align-items: center;
+        flex-direction: column;
+        &__name {
+            margin-top: 10px;
+            margin-left: 0;
+            font-size: 14px;
+            line-height: 18px;
+            color: $light;
         }
-        &-next {
-          right: 25%;
-          margin-right: -40px;
+    }
+    .stars {
+        flex-basis: content;
+    }
+    .hotel {
+        padding-top: 0;
+        padding-bottom: 40px;
+        &-slider {
+            height: 350px;
         }
-      }
+        &-wrapper {
+            justify-content: space-between;
+        }
+        &-name {
+            flex-basis: 100%;
+        }
+        &-info {
+            &__rating {
+                display: none;
+            }
+            &__text {
+                width: 100%;
+            }
+            &__offer {
+                order: -1;
+                margin-left: 0;
+            }
+        }
     }
-  }
-  .activities {
-    &__title {
-      margin-bottom: 36px;
+    .hotel {
+        &-right {
+            flex-direction: column;
+        }
     }
-    padding-top: 40px;
-    padding-bottom: 60px;
-    &__wrapper {
-      gap: 28px;
+    .packages {
+        padding-top: 20px;
+        padding-bottom: 40px;
     }
-    &-card {
-      width: 100%;
+    .booking {
+        width: 100%;
+        margin-bottom: 20px;
     }
-  }
-  .footer {
-    padding-bottom: 23px;
-    padding-top: 69px;
-    &__logo-vertical {
-      width: 104px;
-      height: 120px;
+    .map {
+        width: 100%;
+        &__content {
+            width: 100%;
+        }
     }
-
-    &-wrapper {
-      grid-template-columns: 1fr;
-      row-gap: 30px;
-      column-gap: 0;
+    .newsletter {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        &-wrapper {
+            max-width: 576px;
+            width: 92%;
+            flex-direction: column;
+            align-items: flex-start;
+        }
     }
-
-    &__list {
-      &--pl {
-        padding-left: 0px;
-      }
+    .reviews {
+        padding-bottom: 50px;
+        &__title {
+            margin-bottom: 40px;
+            font-size: 18px;
+            line-height: 23px;
+        }
+        &-slider {
+            &__item {
+                padding: 0 30px 30px;
+                &::after,
+                &::before {
+                    display: none;
+                }
+            }
+            &__button {
+                top: 45px;
+                &-prev {
+                    left: 25%;
+                    margin-left: -40px;
+                }
+                &-next {
+                    right: 25%;
+                    margin-right: -40px;
+                }
+            }
+        }
     }
-    &__social-network {
-      flex-direction: column;
-      grid-row: 2;
-      grid-column: 1;
+    .activities {
+        &__title {
+            margin-bottom: 36px;
+        }
+        padding-top: 40px;
+        padding-bottom: 60px;
+        &__wrapper {
+            gap: 28px;
+        }
+        &-card {
+            width: 100%;
+        }
     }
-    &__links {
-      margin-left: 0;
-      margin-top: 7px;
+    .footer {
+        padding-bottom: 23px;
+        padding-top: 69px;
+        &__logo-vertical {
+            width: 104px;
+            height: 120px;
+        }
+        &-wrapper {
+            grid-template-columns: 1fr;
+            row-gap: 30px;
+            column-gap: 0;
+        }
+        &__list {
+            &--pl {
+                padding-left: 0px;
+            }
+        }
+        &__social-network {
+            flex-direction: column;
+            grid-row: 2;
+            grid-column: 1;
+        }
+        &__links {
+            margin-left: 0;
+            margin-top: 7px;
+        }
+        &__legal {
+            grid-row: 3;
+            grid-column: 1;
+        }
+        &__additional {
+            grid-row: 4;
+            grid-column: 1;
+        }
+        &__categories {
+            grid-row: 5;
+            grid-column: 1;
+        }
+        &__icon--contact-details {
+            margin-right: 10px;
+        }
+        &__contact {
+            &-details {
+                grid-row: 6;
+                grid-column: 1;
+            }
+            &-form {
+                margin-top: 30px;
+                grid-row: 7;
+                grid-column: 1;
+            }
+        }
+        &__button {
+            order: 4;
+        }
+        &__info {
+            margin-bottom: 15px;
+            flex-basis: 100%;
+        }
+        &__politics {
+            margin-top: 30px;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        &__payment-systems {
+            margin-top: 10px;
+        }
+        &-input {
+            flex-basis: 100%;
+        }
+        &__message {
+            width: 100%;
+        }
+        &__text {
+            word-wrap: break-word;
+        }
     }
-    &__legal {
-      grid-row: 3;
-      grid-column: 1;
-    }
-    &__additional {
-      grid-row: 4;
-      grid-column: 1;
-    }
-    &__categories {
-      grid-row: 5;
-      grid-column: 1;
-    }
-    &__icon--contact-details {
-      margin-right: 10px;
-    }
-    &__contact {
-      &-details {
-        grid-row: 6;
-        grid-column: 1;
-      }
-      &-form {
-        margin-top: 30px;
-        grid-row: 7;
-        grid-column: 1;
-      }
-    }
-    &__button {
-      order: 4;
-    }
-    &__info {
-      margin-bottom: 15px;
-      flex-basis: 100%;
-    }
-    &__politics {
-      margin-top: 30px;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-    &__payment-systems {
-      margin-top: 10px;
-    }
-    &-input {
-      flex-basis: 100%;
-    }
-    &__message {
-      width: 100%;
-    }
-    &__text {
-      word-wrap: break-word;
-    }
-  }
 }
 
 @media (max-width: 568px) {
-  .logo {
-    width: 99px;
-  }
-  .packages {
-    &-wrapper {
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    .logo {
+        width: 99px;
     }
-    &-card {
-      &-cost {
-        margin-top: 20px;
-        &--fat {
-          margin-top: 20px;
+    .packages {
+        &-wrapper {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         }
-      }
-      &__img {
-        max-height: 200px;
-      }
-      &__old-cost {
-        flex-basis: 100%;
-        font-size: 12px;
-        line-height: 18px;
-      }
-      &__new-cost {
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 30px;
-      }
-      &__button {
-        padding: 10px 15px;
-        font-weight: 600;
-        font-size: 12px;
-      }
+        &-card {
+            &-cost {
+                margin-top: 20px;
+                &--fat {
+                    margin-top: 20px;
+                }
+            }
+            &__img {
+                max-height: 200px;
+            }
+            &__old-cost {
+                flex-basis: 100%;
+                font-size: 12px;
+                line-height: 18px;
+            }
+            &__new-cost {
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 30px;
+            }
+            &__button {
+                padding: 10px 15px;
+                font-weight: 600;
+                font-size: 12px;
+            }
+        }
     }
-  }
-  .hotel {
-    &-slider {
-      height: 250px;
-      margin-bottom: 20px;
+    .hotel {
+        &-slider {
+            height: 250px;
+            margin-bottom: 20px;
+        }
+        &__slider {
+            margin-bottom: 20px;
+        }
     }
-    &__slider {
-      margin-bottom: 20px;
+    .newsletter {
+        padding: 76px 0 83px 0;
+        &-title {
+            margin-bottom: 37px;
+        }
     }
-  }
-  .newsletter {
-    padding: 76px 0 83px 0;
-    &-title {
-      margin-bottom: 37px;
+    .subscribe {
+        max-width: 280px;
+        width: 100%;
     }
-  }
-  .subscribe {
-    max-width: 280px;
-    width: 100%;
-  }
-  .footer {
-    &__icon {
-      max-width: 21px;
-      flex-basis: 100%;
+    .footer {
+        &__icon {
+            max-width: 21px;
+            flex-basis: 100%;
+        }
     }
-  }
+    .modal {
+        &__contact-form {
+            width: 92%;
+            padding: 23px 33px;
+        }
+        &__button {
+            flex-basis: 100%;
+            margin-bottom: 10px;
+        }
+    }
 }
 
 @media (max-height: 532px) {
-  .navbar {
-    &-menu {
-      gap: 10px;
+    .navbar {
+        &-menu {
+            gap: 10px;
+        }
     }
-  }
 }
