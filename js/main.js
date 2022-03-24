@@ -1,111 +1,94 @@
-const hotelSlider = new Swiper('.hotel-slider ', {
-    // Optional parameters
-
-
-    // If we need pagination
-
-
-    // Navigation arrows
-    navigation: {
-        nextEl: '.hotel-slider__button-next',
-        prevEl: '.hotel-slider__button-prev',
-    },
-
-    // And if we need scrollbar
-    keyboard: {
-        enabled: true,
-    },
-});
-
-const reviewsSlider = new Swiper('.reviews-slider ', {
-    // Optional parameters
-    autoHeight: true,
-    loop: true,
-    // Navigation arrows
-    navigation: {
-        nextEl: '.reviews-slider__button-next',
-        prevEl: '.reviews-slider__button-prev',
-    },
-
-    // And if we need scrollbar
-    keyboard: {
-        enabled: true,
-    },
-    slidesPerView: 'auto',
-});
-
-
-$('.newsletter').parallax({ imageSrc: '../img/bg-newsletter.jpg' });
-
-
-const menuButton = document.querySelector('.menu-button');
-
-function toggleMobileMenu() {
-    document
-        .querySelector('.navbar-bottom').classList.toggle('navbar-bottom--visible');
-    document
-        .querySelector('body').classList.toggle('scroll-hidden');
-}
-
-menuButton.addEventListener('click', toggleMobileMenu);
-
 document.addEventListener('DOMContentLoaded', function() {
 
-    const modalButtons = document.querySelectorAll('.modal__button-open'),
-        overlay = document.querySelector('.modal__overlay'),
-        closeButtons = document.querySelectorAll('.modal__close');
+    const hotelSlider = new Swiper('.hotel-slider ', {
+        // Optional parameters
 
 
-
-    modalButtons.forEach(function(item) {
-
-
-        item.addEventListener('click', function(e) {
-
-            e.preventDefault();
-            let modalId = this.getAttribute('data-toggle'),
-                modalElem = document.querySelector('.modal__contact-form[data-toggle="' + modalId + '"]');
-            modalElem.classList.add('active');
-            overlay.classList.add('active');
-            document
-                .querySelector('body').classList.add('scroll-hidden');
-        }); // end click
-
-    }); // end foreach
+        // If we need pagination
 
 
-    closeButtons.forEach(function(item) {
+        // Navigation arrows
+        navigation: {
+            nextEl: '.hotel-slider__button-next',
+            prevEl: '.hotel-slider__button-prev',
+        },
 
-        item.addEventListener('click', function(e) {
-            let parentModal = this.closest('.modal__contact-form');
-            parentModal.classList.remove('active');
-            overlay.classList.remove('active');
-            document
-                .querySelector('body').classList.remove('scroll-hidden');
-        });
-
-    }); // end foreach
-
-
-    document.body.addEventListener('keyup', function(e) {
-        let key = e.keyCode;
-
-        if (key == 27) {
-
-            document.querySelector('.modal__contact-form.active').classList.remove('active');
-            document.querySelector('.overlay').classList.remove('active');
-            document
-                .querySelector('body').classList.remove('scroll-hidden');
-        };
-    }, false);
-
-
-    overlay.addEventListener('click', function() {
-        document.querySelector('.modal__contact-form.active').classList.remove('active');
-        this.classList.remove('active');
-        document
-            .querySelector('body').classList.remove('scroll-hidden');
+        // And if we need scrollbar
+        keyboard: {
+            enabled: true,
+        },
     });
+
+    const reviewsSlider = new Swiper('.reviews-slider ', {
+        // Optional parameters
+        autoHeight: true,
+        loop: true,
+        // Navigation arrows
+        navigation: {
+            nextEl: '.reviews-slider__button-next',
+            prevEl: '.reviews-slider__button-prev',
+        },
+
+        // And if we need scrollbar
+        keyboard: {
+            enabled: true,
+        },
+        slidesPerView: 'auto',
+    });
+
+
+    $('.newsletter').parallax({ imageSrc: '../img/bg-newsletter.jpg' });
+
+
+    const menuButton = document.querySelector('.menu-button');
+
+    function toggleMobileMenu() {
+        document
+            .querySelector('.navbar-bottom').classList.toggle('navbar-bottom--visible');
+        document
+            .querySelector('body').classList.toggle('scroll-hidden');
+    }
+
+    menuButton.addEventListener('click', toggleMobileMenu);
+
+
+
+    const modalButtons = document.querySelectorAll('.modal__button-open');
+    const overlay = document.querySelector('.modal__overlay');
+    const modalClose = document.querySelector('.modal__close');
+    const modal = document.querySelector('.modal');
+
+    const toggleModal = (e) => {
+
+        modal.classList.toggle('modal--is-open');
+        overlay.classList.toggle('overlay--is-open');
+        document.body.classList.toggle('scroll-hidden');
+    }
+
+    modalButtons.forEach((modalButton) => {
+        modalButton.addEventListener('click', toggleModal);
+    });
+
+    modalClose.addEventListener('click', toggleModal);
+
+
+    overlay.addEventListener('click', (e) => {
+        modal.classList.toggle('modal--is-open');
+        overlay.classList.toggle('overlay--is-open');
+        document.body.classList.toggle('scroll-hidden');
+    });
+
+    document.addEventListener('keydown', (e) => {
+        const key = e.key;
+
+        if (key == 'Escape') {
+            modal.classList.toggle('modal--is-open');
+            overlay.classList.toggle('overlay--is-open');
+            document.body.classList.toggle('scroll-hidden');
+
+        }
+    });
+
 
 
 
