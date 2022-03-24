@@ -28,6 +28,9 @@ button {
 
 input {
     outline: none;
+    &__wrapper {
+        display: flex;
+    }
 }
 
 .scroll-hidden {
@@ -49,4 +52,13 @@ input {
 .active {
     opacity: 1;
     visibility: visible;
+}
+
+.invalid {
+    width: 100%;
+    flex-basis: 100%;
+    margin-top: 5px;
+    font-size: 12px;
+    line-height: 15px;
+    color: $primary;
 }

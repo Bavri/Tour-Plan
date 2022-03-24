@@ -48,6 +48,7 @@
         flex-direction: column;
     }
     &__wrapper {
+        margin-top: 15px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -58,12 +59,12 @@
         height: 50px;
         border: none;
         border-radius: 4px;
-        margin-bottom: 15px;
+        margin-top: 15px;
         background-color: #fff;
     }
     &__message {
         height: 123px;
-        margin-bottom: 15px;
+        margin-top: 15px;
         padding: 18px 23px;
         flex-basis: 100%;
         background-color: #fff;
