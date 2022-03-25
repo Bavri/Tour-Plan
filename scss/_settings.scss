@@ -29,7 +29,10 @@ button {
 input {
     outline: none;
     &__wrapper {
+        max-width: 555px;
+        width: 100%;
         display: flex;
+        flex-direction: row;
     }
 }
 

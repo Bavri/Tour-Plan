@@ -97,7 +97,13 @@
         align-items: center;
         flex-wrap: wrap;
     }
+    &__inputs-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
     &-input {
+        flex-basis: 40%;
         display: flex;
         flex-direction: column;
         padding: 23px;
@@ -106,9 +112,6 @@
         border-radius: 4px;
         margin-top: 15px;
         background-color: #fff;
-        &--mr-30 {
-            margin-right: 30px;
-        }
     }
     &__info {
         font-weight: 700;

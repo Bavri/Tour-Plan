@@ -729,12 +729,14 @@
                 <div class="footer__contact-form">
                     <h3 class="footer__title footer__title--mb-34">Send us a message</h3>
                     <form action="send.php" method="post" class="footer__form form">
-                        <div сlass="input__wrapper">
-                            <input name="name" type="text" class="input footer-input footer-input--mr-30 " placeholder="Your Full Name*">
+                        <div сlass="footer__inputs-wrapper" style="display: flex;justify-content: space-between;width: 100%;">
+                            <div сlass="footer__input-wrapper">
+                                <input name="name" type="text" class="input footer-input " placeholder="Your Full Name*">
+                            </div>
+                            <div сlass="footer__input-wrapper">
+                                <input name="phone" type="tel" class="input footer-input" placeholder="Phone Number*">
+                            </div>
 
-                        </div>
-                        <div сlass="input__wrapper">
-                            <input name="phone" type="tel" class="input footer-input" placeholder="Phone Number*">
                         </div>
                         <textarea name="message" class="footer__message" cols="30" rows="10" placeholder="Phone Message*"></textarea>
                         <button type="submit" value="message" class="button footer__button">Send</button>
