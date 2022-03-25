@@ -1882,16 +1882,16 @@ input__wrapper {
   .footer__politics {
     max-width: 100%;
   }
-  .footer .packages {
+  .packages {
     padding-bottom: 60px;
   }
-  .footer .packages__politics {
+  .packages__politics {
     margin-top: 63px;
   }
-  .footer .packages-card__img--fat {
+  .packages-card__img--fat {
     max-height: 484px;
   }
-  .footer .packages-card__text {
+  .packages-card__text {
     margin-top: 0px;
     margin-bottom: 15px;
     font-size: 12px;
@@ -2256,6 +2256,12 @@ input__wrapper {
   }
   .footer__icon--contact-details {
     margin-right: 10px;
+  }
+  .footer__inputs-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .footer__contact-details {
     -ms-grid-row: 6;

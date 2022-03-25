@@ -66,22 +66,22 @@
                 &__politics {
                     max-width: 100%;
                 }
-                .packages {
-                    padding-bottom: 60px;
-                    &__politics {
-                        margin-top: 63px;
+            }
+            .packages {
+                padding-bottom: 60px;
+                &__politics {
+                    margin-top: 63px;
+                }
+                &-card {
+                    &__img {
+                        &--fat {
+                            max-height: 484px;
+                        }
                     }
-                    &-card {
-                        &__img {
-                            &--fat {
-                                max-height: 484px;
-                            }
-                        }
-                        &__text {
-                            margin-top: 0px;
-                            margin-bottom: 15px;
-                            font-size: 12px;
-                        }
+                    &__text {
+                        margin-top: 0px;
+                        margin-bottom: 15px;
+                        font-size: 12px;
                     }
                 }
             }
@@ -411,6 +411,9 @@
                 }
                 &__icon--contact-details {
                     margin-right: 10px;
+                }
+                &__inputs-wrapper {
+                    flex-direction: column;
                 }
                 &__contact {
                     &-details {
