@@ -152,7 +152,11 @@ $(".form").each(function() {
             phone: {
                 required: "* Enter your phone number",
                 minlength: "* More than 18 letters long",
-            }
+            },
+            message: {
+                required: "* Enter text",
+                minlength: "* More than 2 letters long"
+            },
         },
         highlight: function(element, errorClass, validClass) {
             $(element).addClass(errorClass).removeClass(validClass);
