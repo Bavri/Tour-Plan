@@ -1648,8 +1648,9 @@ input {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .modal--is-open {
@@ -2355,6 +2356,10 @@ input {
 @media (max-height: 532px) {
   .navbar-menu {
     gap: 10px;
+  }
+  .modal {
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
 }
 /*# sourceMappingURL=style.css.map */
