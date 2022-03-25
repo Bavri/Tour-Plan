@@ -408,9 +408,6 @@ input__wrapper {
 }
 
 .invalid {
-  width: 100%;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
   margin-top: 5px;
   font-size: 12px;
   line-height: 15px;
@@ -1582,9 +1579,15 @@ input__wrapper {
           justify-content: space-between;
 }
 
+.footer__input-wrapper {
+  position: relative;
+  -ms-flex-preferred-size: 44%;
+      flex-basis: 44%;
+  margin-top: 15px;
+}
+
 .footer-input {
-  -ms-flex-preferred-size: 40%;
-      flex-basis: 40%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1596,7 +1599,6 @@ input__wrapper {
   height: 50px;
   border: none;
   border-radius: 4px;
-  margin-top: 15px;
   background-color: #fff;
 }
 
