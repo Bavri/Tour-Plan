@@ -439,8 +439,8 @@
           Newsletter
         </span>
             </h2>
-            <form action="send.php" method="post" class="subscribe newsletter__subcribe">
-                <input type="text" name='email' class="subscribe__input" placeholder="Your email address" />
+            <form action="send.php" method="post" class="subscribe newsletter__subcribe form">
+                <input type="text" name='email' class="input subscribe__input" placeholder="Your email address" required />
                 <button type="submit" value="subscribe" class="subscribe__button">Send</button>
             </form>
         </div>
@@ -728,10 +728,20 @@
 
                 <div class="footer__contact-form">
                     <h3 class="footer__title footer__title--mb-34">Send us a message</h3>
-                    <form action="send.php" method="post" class="footer__form">
-                        <input name="name" type="text" class="input footer-input footer-input--mr-30 " placeholder="Your Full Name*">
-                        <input name="phone" type="text" class="input footer-input" placeholder="Phone Number*">
-                        <textarea name="message" class="footer__message" cols="30" rows="10" placeholder="Phone Message*"></textarea>
+                    <form action="send.php" method="post" class="footer__form form">
+                        <div class="footer__inputs-wrapper">
+                            <div class="footer__input-wrapper">
+                                <input name="name" type="text" class="input footer-input " placeholder="Your Full Name*">
+                            </div>
+                            <div class="footer__input-wrapper">
+                                <input name="phone" type="tel" class="input footer-input" placeholder="Phone Number*">
+                            </div>
+
+                        </div>
+                        <div class="footer__message-wrapper">
+                            <textarea name="message" class="footer__message" cols="30" rows="10" placeholder="Phone Message*"></textarea>
+                        </div>
+
                         <button type="submit" value="message" class="button footer__button">Send</button>
                         <span class="footer__info">* Required Fields</span>
                     </form>
@@ -766,11 +776,19 @@
             </button>
 
             <h3 class="modal__title">Booking</h3>
-            <form action="send.php" method="post" class="modal__form">
-                <input name="name" type="text" class="input modal-input modal-input--mr-30 " placeholder="Your Full Name*">
-                <input name="phone" type="text" class="input modal-input" placeholder="Phone Number*">
-                <input name="email" type="text" class="input modal-input" placeholder="Email*">
-                <textarea name="message" class="modal__message" cols="30" rows="5" placeholder="Phone Message*"></textarea>
+            <form action="send.php" method="post" class="modal__form form">
+                <div class="modal__input-wrapper">
+                    <input name="name" type="text" class="input modal-input modal-input--mr-30 " placeholder="Your Full Name*" required>
+                </div>
+                <div class="modal__input-wrapper">
+                    <input name="phone" type="tel" class="input modal-input" placeholder="Phone Number*" required>
+                </div>
+                <div class="modal__input-wrapper">
+                    <input name="email" type="email" class="input modal-input" placeholder="Email*" required>
+                </div>
+                <div class="modal__message-wrapper">
+                    <textarea name="message" class="modal__message" cols="30" rows="10" placeholder="Phone Message*"></textarea>
+                </div>
 
                 <div class="modal__wrapper">
                     <button type="submit" value="message" class="button modal__button">Send</button>
@@ -784,10 +802,11 @@
 
     <div class="overlay modal__overlay"></div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="./js/parallax.min.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="./js/parallax.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
