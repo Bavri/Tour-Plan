@@ -584,10 +584,6 @@ input {
   line-height: 15px;
 }
 
-.hotel-description__thank-you {
-  margin-top: 20px;
-}
-
 .hotel-grid {
   display: -webkit-box;
   display: -ms-flexbox;
