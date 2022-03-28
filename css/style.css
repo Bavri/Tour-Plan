@@ -2359,6 +2359,9 @@ input {
   .modal {
     overflow-y: scroll;
     overflow-x: hidden;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 /*# sourceMappingURL=style.css.map */
