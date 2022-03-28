@@ -198,7 +198,7 @@
                                 <span class="booking__num">12100</span>
                             </a>
                         </div>
-                        <button data-toggle='modal' class="button booking__button modal__button-open">View Other Options</button>
+                        <button class="button booking__button modal__button-open">View Other Options</button>
                     </div>
                     <div class="map">
                         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A6c3cab6033ba70b5019821f5fe889b4084d09522e1f3c68e7f170f596019fae6&amp;source=constructor" width="347" height="213" frameborder="0" class="map__content"></iframe>
@@ -669,18 +669,18 @@
                     <div class="footer__links">
                         <a href="#" class="footer__link">
                             <svg class="icon footer__icon">
-                <use xlink:href="./img/sprite.svg#ico-fb"></use>
-              </svg>
+                            <use xlink:href="./img/sprite.svg#ico-fb"></use>
+                        </svg>
                         </a>
                         <a href="#" class="footer__link">
                             <svg class="icon footer__icon">
-                <use xlink:href="./img/sprite.svg#ico-yt"></use>
-              </svg>
+                        <use xlink:href="./img/sprite.svg#ico-yt"></use>
+                        </svg>
                         </a>
                         <a href="#" class="footer__link">
                             <svg class="icon footer__icon">
-                <use xlink:href="./img/sprite.svg#ico-inst"></use>
-              </svg>
+                            <use xlink:href="./img/sprite.svg#ico-inst"></use>
+                         </svg>
                         </a>
                     </div>
 
@@ -768,12 +768,12 @@
     </footer>
 
 
-    <div class="modal">
+    <div class="modal modal--with-scrollbar">
 
-        <div data-toggle='modal' class="modal__contact-form modal__contact-form--with-scrollbar">
-            <a href="#" class="modal__close">
+        <div class="modal__contact-form">
+            <button class="modal__close">
                 <img src="./img/ico-close.svg" alt="" class="modal__icon">
-            </a>
+            </button>
 
             <h3 class="modal__title">Booking</h3>
             <form action="send.php" method="post" class="modal__form form">
@@ -791,16 +791,16 @@
                 </div>
 
                 <div class="modal__wrapper">
-                    <button data-toggle="modal" type="submit" value="message" class="button modal__button">Send</button>
+                    <button type="submit" value="message" class="button modal__button">Send</button>
                     <span class="modal__info">* Required Fields</span>
                 </div>
 
             </form>
         </div>
-        <div class="overlay modal__overlay"></div>
+
     </div>
 
-
+    <div class="overlay modal__overlay"></div>
 
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/jquery.validate.min.js"></script>

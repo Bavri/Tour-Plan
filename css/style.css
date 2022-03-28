@@ -402,7 +402,7 @@ input__wrapper {
   background-color: rgba(0, 143, 223, 0.39);
 }
 
-.active {
+.overlay--is-open {
   opacity: 1;
   visibility: visible;
 }
@@ -1687,6 +1687,46 @@ label.invalid {
   height: 22px;
 }
 
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 130;
+  opacity: 0;
+  max-width: 478px;
+  max-height: -webkit-max-content;
+  max-height: -moz-max-content;
+  max-height: max-content;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal--is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal--with-scrollbar::-webkit-scrollbar {
+  width: 5px;
+  background-color: #ffffff;
+}
+
+.modal--with-scrollbar::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+
 .modal__icon {
   width: 16px;
   height: 16px;
@@ -1697,6 +1737,9 @@ label.invalid {
   position: absolute;
   top: 17px;
   right: 17px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .modal__title {
@@ -1730,17 +1773,7 @@ label.invalid {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #0a223d;
-  overflow-y: scroll;
   border-radius: 8px;
-}
-
-.modal__contact-form--with-scrollbar::-webkit-scrollbar {
-  width: 5px;
-  background-color: transparent;
-}
-
-.modal__contact-form--with-scrollbar::-webkit-scrollbar-thumb {
-  background-color: transparent;
 }
 
 .modal__form {
@@ -1821,11 +1854,6 @@ label.invalid {
   font-size: 12px;
   line-height: 15px;
   color: #E0E0E0;
-}
-
-.modal__contact-form.active {
-  opacity: 1;
-  visibility: visible;
 }
 
 @media (max-width: 1200px) {
@@ -2411,6 +2439,13 @@ label.invalid {
 @media (max-height: 532px) {
   .navbar-menu {
     gap: 10px;
+  }
+  .modal {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 /*# sourceMappingURL=style.css.map */
