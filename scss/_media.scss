@@ -525,11 +525,16 @@
                 }
             }
         }
-
+        
         @media (max-height: 532px) {
             .navbar {
                 &-menu {
                     gap: 10px;
                 }
+            }
+            .modal {
+                overflow-y: scroll;
+                overflow-x: hidden;
+                align-items: flex-start;
             }
         }

@@ -50,6 +50,10 @@ input {
     opacity: 0;
     visibility: hidden;
     background-color: rgba(0, 143, 223, 0.39);
+    &--is-open {
+        visibility: visible;
+        opacity: 1;
+    }
 }
 
 .active {
@@ -70,5 +74,4 @@ label.invalid {
     font-size: 12px;
     line-height: 15px;
     color: $primary;
-
 }

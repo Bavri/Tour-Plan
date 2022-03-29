@@ -403,6 +403,11 @@ input__wrapper {
 }
 
 .overlay--is-open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.active {
   opacity: 1;
   visibility: visible;
 }
@@ -1754,16 +1759,12 @@ label.invalid {
 }
 
 .modal__contact-form {
-  max-width: 555px;
+  max-width: 478px;
   width: 100%;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  z-index: 130;
-  opacity: 0;
-  visibility: hidden;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  position: relative;
   padding: 33px 88px;
   display: -webkit-box;
   display: -ms-flexbox;
