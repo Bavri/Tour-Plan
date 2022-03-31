@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
-
+    <link href="./css/aos.css" rel="stylesheet">
     <title>Best Tour Plan</title>
 </head>
 
@@ -100,9 +100,9 @@
           </a>
                 </li>
                 <li class="breadcrumb-list__item">
-                    <a href="#" class="breadcrumb-list__link">
-            Grand Hilton Hotel
-          </a>
+
+                    Grand Hilton Hotel
+
                 </li>
             </ul>
 
@@ -145,7 +145,7 @@
             </div>
             <div class="hotel-grid">
 
-                <div class="swiper hotel-slider hotel__slider">
+                <div class="swiper hotel-slider hotel__slider" data-aos="fade-right" data-aos-delay="100">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
@@ -167,7 +167,7 @@
 
 
                 <div class="hotel-right">
-                    <div class="booking">
+                    <div class="booking" data-aos="fade-left" data-aos-delay="200">
                         <div class="booking__info">
                             <div class="booking__price">
                                 <span class="booking__start">price starts as</span>
@@ -200,7 +200,7 @@
                         </div>
                         <button class="button booking__button modal__button-open">View Other Options</button>
                     </div>
-                    <div class="map">
+                    <div class="map" data-aos="fade-left" data-aos-delay="300">
                         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A6c3cab6033ba70b5019821f5fe889b4084d09522e1f3c68e7f170f596019fae6&amp;source=constructor" width="347" height="213" frameborder="0" class="map__content"></iframe>
                     </div>
                 </div>
@@ -214,7 +214,7 @@
             <h2 class="packages__title packages__title--fat">Other Packages</h2>
             <div class="packages-wrapper">
 
-                <div class="packages-card packages-card--fat">
+                <div class="packages-card packages-card--fat" data-aos="fade-right" data-aos-delay="100">
                     <img src="./img/packages-card-1.jpg" alt="" class="packages-card__img  packages-card__img--fat" />
                     <div class="packages-card__wrapper">
                         <div class="stars stars--packages">
@@ -276,7 +276,7 @@
                 </div>
 
 
-                <div class="packages-card">
+                <div class="packages-card" data-aos="fade-right" data-aos-delay="200">
                     <img src="./img/packages-card-2.jpg" alt="" class="packages-card__img" />
                     <div class="packages-card__wrapper">
                         <h3 class="packages-card__title">LUX* Belle Mare</h3>
@@ -313,7 +313,7 @@
 
                 </div>
 
-                <div class="packages-card">
+                <div class="packages-card" data-aos="fade-right" data-aos-delay="300">
                     <img src="./img/packages-card-3.jpg" alt="" class="packages-card__img" />
                     <div class="packages-card__wrapper">
                         <h3 class="packages-card__title">White Palace</h3>
@@ -351,7 +351,7 @@
 
                 </div>
 
-                <div class="packages-card">
+                <div class="packages-card" data-aos="fade-right" data-aos-delay="400">
                     <img src="./img/packages-card-4.jpg" alt="" class="packages-card__img" />
                     <div class="packages-card__wrapper">
                         <h3 class="packages-card__title">Luxury Place</h3>
@@ -389,7 +389,7 @@
 
                 </div>
 
-                <div class="packages-card">
+                <div class="packages-card" data-aos="fade-right" data-aos-delay="500">
                     <img src="./img/packages-card-5.jpg" alt="" class="packages-card__img" />
                     <div class="packages-card__wrapper">
                         <h3 class="packages-card__title">Hotel Five Star</h3>
@@ -603,21 +603,21 @@
         <div class="container">
             <h2 class="activities__title">Other Activities</h2>
             <div class="activities__wrapper">
-                <div class="activities-card activities-card--1">
+                <div class="activities-card activities-card--1" data-aos="fade-up" data-aos-delay="100">
                     <h3 class="activities-card__title">The curious corner of chamarel</h3>
                     <button class="activities-card__button">Book Now</button>
                 </div>
-                <div class="activities-card activities-card--2">
+                <div class="activities-card activities-card--2" data-aos="fade-up" data-aos-delay="200">
                     <h3 class="activities-card__title">Gymkhana club golf course
                     </h3>
                     <button class="activities-card__button">Book Now</button>
                 </div>
-                <div class="activities-card activities-card--3">
+                <div class="activities-card activities-card--3" data-aos="fade-up" data-aos-delay="300">
                     <h3 class="activities-card__title">Tamarind falls hiking trip - full day
                     </h3>
                     <button class="activities-card__button">Book Now</button>
                 </div>
-                <div class="activities-card activities-card--4">
+                <div class="activities-card activities-card--4" data-aos="fade-up" data-aos-delay="400">
                     <h3 class="activities-card__title">The blue marine discovery quest
                     </h3>
                     <button class="button activities-card__button">Book Now</button>
@@ -726,38 +726,38 @@
                     </ul>
                 </div>
 
-                <div class="footer__contact-form">
-                    <h3 class="footer__title footer__title--mb-34">Send us a message</h3>
-                    <form action="send.php" method="post" class="footer__form form">
-                        <div class="footer__inputs-wrapper">
-                            <div class="footer__input-wrapper">
-                                <input name="name" type="text" class="input footer-input " placeholder="Your Full Name*">
+                <div class="footer__contact-form" data-aos="fade-left" data-aos-delay="300">
+                    <h3 class=" footer__title footer__title--mb-34 ">Send us a message</h3>
+                    <form action="send.php " method="post " class="footer__form form ">
+                        <div class="footer__inputs-wrapper ">
+                            <div class="footer__input-wrapper ">
+                                <input name="name " type="text " class="input footer-input " placeholder="Your Full Name* ">
                             </div>
-                            <div class="footer__input-wrapper">
-                                <input name="phone" type="tel" class="input footer-input" placeholder="Phone Number*">
+                            <div class="footer__input-wrapper ">
+                                <input name="phone " type="tel " class="input footer-input " placeholder="Phone Number* ">
                             </div>
 
                         </div>
-                        <div class="footer__message-wrapper">
-                            <textarea name="message" class="footer__message" cols="30" rows="10" placeholder="Phone Message*"></textarea>
+                        <div class="footer__message-wrapper ">
+                            <textarea name="message " class="footer__message " cols="30 " rows="10 " placeholder="Phone Message* "></textarea>
                         </div>
 
-                        <button type="submit" value="message" class="button footer__button">Send</button>
-                        <span class="footer__info">* Required Fields</span>
+                        <button type="submit " value="message " class="button footer__button ">Send</button>
+                        <span class="footer__info ">* Required Fields</span>
                     </form>
                 </div>
             </div>
 
 
 
-            <div class="footer-wrapper__politics">
-                <div class="footer__politics">
-                    <ul class="footer__ul footer__politics-ul">
-                        <li class="footer__item footer__politics-item"><a href="#" class="footer__link">Disclaimer</a></li>
-                        <li class="footer__item footer__politics-item"><a href="#" class="footer__link">Conditions of use</a></li>
-                        <li class="footer__item footer__politics-item"><a href="#" class="footer__link">Cancellation policy</a></li>
+            <div class="footer-wrapper__politics ">
+                <div class="footer__politics ">
+                    <ul class="footer__ul footer__politics-ul ">
+                        <li class="footer__item footer__politics-item "><a href="# " class="footer__link ">Disclaimer</a></li>
+                        <li class="footer__item footer__politics-item "><a href="# " class="footer__link ">Conditions of use</a></li>
+                        <li class="footer__item footer__politics-item "><a href="# " class="footer__link ">Cancellation policy</a></li>
                     </ul>
-                    <img src="./img/payment-systems.png" alt="" class="footer__payment-systems">
+                    <img src="./img/payment-systems.png " alt=" " class="footer__payment-systems ">
                 </div>
             </div>
 
@@ -768,31 +768,31 @@
     </footer>
 
 
-    <div class="modal modal--with-scrollbar">
+    <div class="modal modal--with-scrollbar ">
 
-        <div class="modal__contact-form">
-            <button class="modal__close">
-                <img src="./img/ico-close.svg" alt="" class="modal__icon">
+        <div class="modal__contact-form ">
+            <button class="modal__close ">
+                <img src="./img/ico-close.svg " alt=" " class="modal__icon ">
             </button>
 
-            <h3 class="modal__title">Booking</h3>
-            <form action="send.php" method="post" class="modal__form form">
-                <div class="modal__input-wrapper">
-                    <input name="name" type="text" class="input modal-input modal-input--mr-30 " placeholder="Your Full Name*" required>
+            <h3 class="modal__title ">Booking</h3>
+            <form action="send.php " method="post " class="modal__form form ">
+                <div class="modal__input-wrapper ">
+                    <input name="name " type="text " class="input modal-input modal-input--mr-30 " placeholder="Your Full Name* " required>
                 </div>
-                <div class="modal__input-wrapper">
-                    <input name="phone" type="tel" class="input modal-input" placeholder="Phone Number*" required>
+                <div class="modal__input-wrapper ">
+                    <input name="phone " type="tel " class="input modal-input " placeholder="Phone Number* " required>
                 </div>
-                <div class="modal__input-wrapper">
-                    <input name="email" type="email" class="input modal-input" placeholder="Email*" required>
+                <div class="modal__input-wrapper ">
+                    <input name="email " type="email " class="input modal-input " placeholder="Email* " required>
                 </div>
-                <div class="modal__message-wrapper">
-                    <textarea name="message" class="modal__message" cols="30" rows="10" placeholder="Phone Message*"></textarea>
+                <div class="modal__message-wrapper ">
+                    <textarea name="message " class="modal__message " cols="30 " rows="10 " placeholder="Phone Message* "></textarea>
                 </div>
 
-                <div class="modal__wrapper">
-                    <button type="submit" value="message" class="button modal__button">Send</button>
-                    <span class="modal__info">* Required Fields</span>
+                <div class="modal__wrapper ">
+                    <button type="submit " value="message " class="button modal__button ">Send</button>
+                    <span class="modal__info ">* Required Fields</span>
                 </div>
 
             </form>
@@ -800,15 +800,16 @@
 
     </div>
 
-    <div class="overlay modal__overlay"></div>
+    <div class="overlay modal__overlay "></div>
 
-    <script src="./js/jquery-3.6.0.min.js"></script>
-    <script src="./js/jquery.validate.min.js"></script>
-    <script src="js/jquery.mask.min.js"></script>
-    <script src="./js/parallax.min.js"></script>
-    <script src="./js/swiper-bundle.min.js"></script>
-    <script src="./js/parallax.min.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="./js/jquery-3.6.0.min.js "></script>
+    <script src="./js/jquery.validate.min.js "></script>
+    <script src="js/jquery.mask.min.js "></script>
+    <script src="./js/parallax.min.js "></script>
+    <script src="./js/swiper-bundle.min.js "></script>
+    <script src="./js/parallax.min.js "></script>
+    <script src="./js/aos.js "></script>
+    <script src="./js/main.js "></script>
 </body>
 
 </html>
